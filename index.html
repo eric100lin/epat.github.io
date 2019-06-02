@@ -42,79 +42,52 @@
         </noscript>
 
         <div class="">
-
             <div id="content" class="span12">
                 <div>
-                    
+                    <style>
+                        hr {
+                            display: block;
+                            height: 1px;
+                            border: 0;
+                            border-top: 1px solid white;
+                            margin: 1em 0;
+                            padding: 0;
+                        }
 
+                        small {
+                            color:white;
+                        }
 
+                        .blink {
+                            animation-duration: 0.5s;
+                            animation-name: blink;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
+                            animation-timing-function: ease-in-out;
+                        }
+                        @keyframes blink {
+                            from {
+                                opacity: 1;
+                            }
+                            to {
+                                opacity: 0.2;
+                            }
+                        }
+                    </style>
 
-<style>
-    hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid white;
-        margin: 1em 0;
-        padding: 0;
-    }
-
-    small {
-        color:white;
-    }
-
-    .blink {
-        animation-duration: 0.5s;
-        animation-name: blink;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out;
-    }
-    @keyframes blink {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0.2;
-        }
-    }
-</style>
-
-<div style="background-color:black">
-    <span id="now" style="font-size:60px;color:#FFFFFF">Current Time: 2019/06/01 23:28:52</span>
-    <span style="font-size:60px;color:#FFFFFF">Slide:<span id="slide" style="color: rgb(255, 0, 0);">Off</span></span>
-    <hr>
-    <div id="slides" style="overflow: hidden; position: relative; width: 100%; height: 1704px;">
-        <div class="slides-control" style="position: relative; height: 100%; width: 11367px; left: -3789px;">
-        <div class="slides-container" style="margin: 0px; padding: 0px; list-style: none; position: relative; height: 100%; display: block;"></div>
-    </div>
-</div>
+                    <div style="background-color:black">
+                        <span id="now" style="font-size:60px;color:#FFFFFF">Current Time: 2019/06/01 23:28:52</span>
+                        <span style="font-size:60px;color:#FFFFFF">Slide:<span id="slide" style="color: rgb(255, 0, 0);">Off</span></span>
+                        <hr>
+                        <div id="group_144" style="background-color: black; display: block; left: 3789px; position: absolute; overflow: hidden; height: 100%; width: 3789px; top: 0px; z-index: 2;">
+                        </div>
+                    </div>
 
 <script>
-    var started = true; //slide
+    var started = false; //slide
     var group_list = [144]; //add group
 
     $(document).ready(function () {
-        for (var i = 0; i < group_list.length; i++) {
-            $(".slides-container").append('<div id="group_' + group_list[i] + '"style="background-color:black;"></div>');
-        }
-        $("#slides").superslides({
-            hashchange: true,
-            play: 30000
-        });
-
-        $('#slides').on('mousedown', function () {
-            if (started) {
-                $(this).superslides('stop');
-                started = false;
-                $("#slide").text("Off").css("color", "#FF0000");
-            }
-            else {
-                $(this).superslides('start');
-                started = true;
-                $("#slide").text("On").css("color", "#99FF33");
-            }
-        });
         refreshAutoTestInfo();
         setInterval(setTime, 1000);
         setInterval(refreshAutoTestInfo, 120000);
@@ -264,4 +237,34 @@
     });
 </script>
 
-<canvas id="NOTEPAD" class=" cross" width="3789" height="2026"></canvas><div id="NOTEPAD_controls" style="opacity: 1; top: 2px; left: 3296px;"><div class="NOTEPAD_controls_draw"><div class="NOTEPAD_controls_draw_option pen" title="Pencil - draw a custom line"></div><div class="NOTEPAD_controls_draw_option eyedropper" title="Color picker - pick a color from the web page or your drawings and use it for drawing"></div><div class="NOTEPAD_controls_draw_option text" title="Text - insert text"></div><div class="NOTEPAD_controls_draw_option line" title="Line - draw a straight line"></div><div class="NOTEPAD_controls_draw_option quadratic_curve" title="Quadratic curve - draw a quadratic curve"></div><div class="NOTEPAD_controls_draw_option bezier_curve" title="Bezier curve - draw a bezier curve"></div><div class="NOTEPAD_controls_draw_option polygon" title="Polygon - draw a polygon"></div><div class="NOTEPAD_controls_draw_option circle" title="Ellipse - draw an ellipse or a circle"></div><div class="NOTEPAD_controls_draw_option rectangle selected" title="Rectangle - draw a rectangle or a square"></div><div class="NOTEPAD_controls_draw_option cursor" title="Cursor - interact with the web page"></div><div class="NOTEPAD_controls_draw_option eraser" title="Eraser - erase part of your drawings"></div><div class="NOTEPAD_controls_draw_option fill" title="Paint Bucket - fill an area"></div></div><div class="NOTEPAD_controls_color"><input type="color" title="Select a color"></div><div class="NOTEPAD_controls_range alpha_control"><input type="range" min="0" max="1" step="0.01" title="Select transparency"><p>100%</p></div><div class="NOTEPAD_controls_range size_control"><input type="range" min="1" max="20" step="1" title="Select line width"><p>100%</p></div><div class="NOTEPAD_controls_control"><div class="NOTEPAD_controls_control_option backBtn " title="Step backward"></div><div class="NOTEPAD_controls_control_option nextBtn " title="Step forward"></div><div class="NOTEPAD_controls_control_option eraseAllBtn" title="Erase all"></div><div class="NOTEPAD_controls_control_option prtBtn" title="Take a screenshot of the current web page with your drawings"></div><div class="NOTEPAD_controls_control_option hideCtrlBtn" title="Close control panel (Click the extension icon to re-open)"></div><div class="NOTEPAD_controls_control_option exitBtn" title="Quit"></div><div class="settingsBtn" title="Settings"></div></div></div></body></html>
+    <canvas id="NOTEPAD" class=" cross" width="3789" height="2026"></canvas>
+    <div id="NOTEPAD_controls" style="opacity: 1; top: 2px; left: 3296px;">
+        <div class="NOTEPAD_controls_draw">
+            <div class="NOTEPAD_controls_draw_option pen" title="Pencil - draw a custom line"></div>
+            <div class="NOTEPAD_controls_draw_option eyedropper" title="Color picker - pick a color from the web page or your drawings and use it for drawing"></div>
+            <div class="NOTEPAD_controls_draw_option text" title="Text - insert text"></div>
+            <div class="NOTEPAD_controls_draw_option line" title="Line - draw a straight line"></div>
+            <div class="NOTEPAD_controls_draw_option quadratic_curve" title="Quadratic curve - draw a quadratic curve"></div>
+                <div class="NOTEPAD_controls_draw_option bezier_curve" title="Bezier curve - draw a bezier curve"></div>
+            <div class="NOTEPAD_controls_draw_option polygon" title="Polygon - draw a polygon"></div>
+            <div class="NOTEPAD_controls_draw_option circle" title="Ellipse - draw an ellipse or a circle"></div>
+            <div class="NOTEPAD_controls_draw_option rectangle selected" title="Rectangle - draw a rectangle or a square"></div>
+            <div class="NOTEPAD_controls_draw_option cursor" title="Cursor - interact with the web page"></div>
+            <div class="NOTEPAD_controls_draw_option eraser" title="Eraser - erase part of your drawings"></div>
+            <div class="NOTEPAD_controls_draw_option fill" title="Paint Bucket - fill an area"></div>
+        </div>
+        <div class="NOTEPAD_controls_color"><input type="color" title="Select a color"></div>
+        <div class="NOTEPAD_controls_range alpha_control"><input type="range" min="0" max="1" step="0.01" title="Select transparency"><p>100%</p></div>
+        <div class="NOTEPAD_controls_range size_control"><input type="range" min="1" max="20" step="1" title="Select line width"><p>100%</p></div>
+        <div class="NOTEPAD_controls_control">
+            <div class="NOTEPAD_controls_control_option backBtn " title="Step backward"></div>
+            <div class="NOTEPAD_controls_control_option nextBtn " title="Step forward"></div>
+            <div class="NOTEPAD_controls_control_option eraseAllBtn" title="Erase all"></div>
+            <div class="NOTEPAD_controls_control_option prtBtn" title="Take a screenshot of the current web page with your drawings"></div>
+            <div class="NOTEPAD_controls_control_option hideCtrlBtn" title="Close control panel (Click the extension icon to re-open)"></div>
+            <div class="NOTEPAD_controls_control_option exitBtn" title="Quit"></div>
+            <div class="settingsBtn" title="Settings"></div>
+        </div>
+    </div>
+</body>
+</html>
