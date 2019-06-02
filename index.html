@@ -4,7 +4,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pedigree • </title>
+    <title>Group 144</title>
     <script src="./index_files/jquery-1.9.1.min.js.下載"></script>
     <script src="./index_files/jquery-ui-1.9.1.min.js.下載"></script>
     <script src="./index_files/bootstrap.js.下載"></script>
@@ -123,8 +123,7 @@
     function refreshAutoTestInfo()
     {
         $.getJSON("./AutoTestData.json",
-           function (result) {
-               var obj = JSON.parse(result);
+           function (obj) {
                $("#group_" + obj.group_id).empty();
                var html = '';
                //project information
