@@ -16,7 +16,7 @@
       "tree_day_avg": "60",
       "last_week_avg": "54",
       "pass_rate": "73",
-      "pass_rate_summary": "(62/85)",
+      "pass_rate_summary": "(61/84)",
       "top10_pass_rate": "100",
       "top20_pass_rate": "90",
       "top30_pass_rate": "90"
@@ -112,7 +112,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 04:36:56",
+      "update_time": "2019-06-04 04:38:58",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -120,5 +120,5 @@
       "capability": []
     }
   ],
-  "estimate_time": 73
+  "estimate_time": 71
 }
