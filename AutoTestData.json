@@ -16,10 +16,10 @@
       "tree_day_avg": "61",
       "last_week_avg": "52",
       "pass_rate": "73",
-      "pass_rate_summary": "(59/81)",
+      "pass_rate_summary": "(60/82)",
       "top10_pass_rate": "90",
       "top20_pass_rate": "90",
-      "top30_pass_rate": "80"
+      "top30_pass_rate": "83"
     }
   ],
   "test_suite_list_hb": [
@@ -33,12 +33,12 @@
     {
       "host_name": "ATHQA034C",
       "device": "3",
-      "status": "BUSY",
-      "update_time": "2019-06-03 20:34:40",
+      "status": "IDLE",
+      "update_time": "2019-06-03 23:40:15",
       "job_type": "HB",
-      "test_suite_id": "20",
-      "main_clno": "20190603171522",
-      "fail_count": 1,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 2,
       "capability": [
         "20"
       ]
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-03 23:38:29",
+      "update_time": "2019-06-03 23:40:31",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,7 +73,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-03 23:37:57",
+      "update_time": "2019-06-03 23:40:00",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -85,11 +85,11 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-06-03 22:26:14",
+      "status": "IDLE",
+      "update_time": "2019-06-03 23:40:37",
       "job_type": "PB",
-      "test_suite_id": "20",
-      "main_clno": "PB-193642",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20"
@@ -112,7 +112,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-03 23:38:36",
+      "update_time": "2019-06-03 23:40:38",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -120,5 +120,5 @@
       "capability": []
     }
   ],
-  "estimate_time": 72
+  "estimate_time": 70
 }
