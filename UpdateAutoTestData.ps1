@@ -16,12 +16,15 @@ function Start-Sleep($seconds) {
 }
 
 #For Production
-#$url = "http://ep.mediatek.inc/Monitor/getAutoTestData"
-#$params = @{"group_id"="144";}
-#$output = "AutoTestData.json"
+$user = "shr_he_at_admin"
+$pword = ConvertTo-SecureString -String "mediatek" -AsPlainText -Force
+$cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $user, $pword
+$url = "http://ep.mediatek.inc/Monitor/getAutoTestData"
+$params = @{"group_id"="144";}
+$output = "AutoTestData.json"
 #For Testing
-$url = "https://eric100lin.github.io/AutoTestData.json"
-$output = "AutoDownloadData.json"
+#$url = "https://eric100lin.github.io/AutoTestData.json"
+#$output = "AutoDownloadData.json"
 
 While($true)
 {
@@ -29,17 +32,18 @@ While($true)
     #Reference: https://blog.jourdant.me/post/3-ways-to-download-files-with-powershell
     #Reference: https://stackoverflow.com/questions/35722865/making-a-powershell-post-request-if-a-body-param-starts-with
     #For Production
-    #Invoke-WebRequest -Uri $url -Method POST -Body ($params|ConvertTo-Json) -ContentType "application/json" -OutFile $output
+    Invoke-WebRequest -Uri $url -Method POST -Credential $cred -Body ($params|ConvertTo-Json) -ContentType "application/json" -OutFile $output
     #For Testing
-    Invoke-WebRequest -Uri $url -Method GET -OutFile $output
+    #Invoke-WebRequest -Uri $url -Method GET -OutFile $output
     Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s) to pull $output"
 
     #For Production
-    #git add --all
-    #git commit -m "Update $output at $start_time"
-    #git push origin master
+    Write-Host "Update $output at $start_time"
+    git add --all
+    git commit -m "Update $output at $start_time"
+    git push origin master
     #For Testing
-    git status
+    #git status
 
     Start-Sleep(120)
 }
