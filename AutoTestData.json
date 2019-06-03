@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-06-03 21:29:09",
+      "update_time": "2019-06-03 21:59:37",
       "job_type": "PB",
       "test_suite_id": "20",
       "main_clno": "PB-193666",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 51
+  "estimate_time": 59
 }
