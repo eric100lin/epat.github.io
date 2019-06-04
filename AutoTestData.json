@@ -60,14 +60,12 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 13:38:55",
+      "update_time": "2019-06-04 13:41:08",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
       "fail_count": 0,
-      "capability": [
-        "20"
-      ]
+      "capability": []
     },
     {
       "host_name": "ATHQA037B",
@@ -112,7 +110,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 13:38:49",
+      "update_time": "2019-06-04 13:41:07",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -122,5 +120,5 @@
       ]
     }
   ],
-  "estimate_time": 41
+  "estimate_time": 39
 }
