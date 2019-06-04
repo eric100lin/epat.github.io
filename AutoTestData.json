@@ -15,8 +15,8 @@
       "queue": "0",
       "tree_day_avg": "60",
       "last_week_avg": "57",
-      "pass_rate": "87",
-      "pass_rate_summary": "(62/71)",
+      "pass_rate": "88",
+      "pass_rate_summary": "(63/72)",
       "top10_pass_rate": "90",
       "top20_pass_rate": "95",
       "top30_pass_rate": "93"
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-06-04 23:26:42",
+      "update_time": "2019-06-04 23:29:45",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 23:27:14",
+      "update_time": "2019-06-04 23:29:16",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,7 +73,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 23:26:52",
+      "update_time": "2019-06-04 23:28:56",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -85,11 +85,11 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-06-04 22:33:07",
+      "status": "IDLE",
+      "update_time": "2019-06-04 23:29:07",
       "job_type": "PB",
-      "test_suite_id": "20",
-      "main_clno": "PB-194281",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20"
@@ -99,7 +99,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 23:26:42",
+      "update_time": "2019-06-04 23:29:46",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -112,7 +112,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-04 23:27:17",
+      "update_time": "2019-06-04 23:29:20",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 16
+  "estimate_time": 14
 }
