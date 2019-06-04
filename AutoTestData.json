@@ -15,8 +15,8 @@
       "queue": "0",
       "tree_day_avg": "60",
       "last_week_avg": "57",
-      "pass_rate": "87",
-      "pass_rate_summary": "(62/71)",
+      "pass_rate": "88",
+      "pass_rate_summary": "(63/72)",
       "top10_pass_rate": "70",
       "top20_pass_rate": "80",
       "top30_pass_rate": "83"
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-06-05 05:23:30",
+      "update_time": "2019-06-05 05:25:32",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-05 05:23:35",
+      "update_time": "2019-06-05 05:25:37",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-05 05:23:56",
+      "update_time": "2019-06-05 05:25:59",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,7 +73,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-05 05:23:18",
+      "update_time": "2019-06-05 05:25:22",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -86,7 +86,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-05 05:23:59",
+      "update_time": "2019-06-05 05:26:02",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -98,11 +98,11 @@
     {
       "host_name": "ATHQA038C",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-06-05 04:30:39",
+      "status": "IDLE",
+      "update_time": "2019-06-05 05:25:52",
       "job_type": "PB",
-      "test_suite_id": "20",
-      "main_clno": "PB-194314",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20"
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 28
+  "estimate_time": 26
 }
