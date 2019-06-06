@@ -16,7 +16,7 @@
       "tree_day_avg": "60",
       "last_week_avg": "58",
       "pass_rate": "93",
-      "pass_rate_summary": "(53/57)",
+      "pass_rate_summary": "(52/56)",
       "top10_pass_rate": "80",
       "top20_pass_rate": "90",
       "top30_pass_rate": "93"
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 91
+  "estimate_time": 89
 }
