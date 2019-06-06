@@ -12,7 +12,7 @@
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": 3,
+      "queue": 1,
       "tree_day_avg": "60",
       "last_week_avg": "58",
       "pass_rate": "97",
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-07 01:27:46",
+      "update_time": "2019-06-07 01:30:52",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -59,11 +59,11 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-07 01:27:55",
+      "status": "BUSY",
+      "update_time": "2019-06-07 01:30:00",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195564",
       "fail_count": 0,
       "capability": [
         "20"
@@ -86,10 +86,10 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-07 01:28:03",
+      "update_time": "2019-06-07 01:30:43",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195563",
       "fail_count": 0,
       "capability": [
         "20"
@@ -99,10 +99,10 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-07 01:27:56",
+      "update_time": "2019-06-07 01:31:02",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195565",
       "fail_count": 0,
       "capability": [
         "20"
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 118
+  "estimate_time": 115
 }
