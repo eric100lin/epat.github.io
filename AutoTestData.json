@@ -111,8 +111,8 @@
     {
       "host_name": "ATHQA038D",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-07 03:53:37",
+      "status": "BUSY",
+      "update_time": "2019-06-07 03:54:27",
       "job_type": "PB",
       "test_suite_id": "20",
       "main_clno": "PB-195574",
