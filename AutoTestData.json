@@ -12,7 +12,7 @@
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": 4,
+      "queue": 3,
       "tree_day_avg": "59",
       "last_week_avg": "58",
       "pass_rate": "97",
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-06 21:53:43",
+      "update_time": "2019-06-06 21:55:40",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,10 +60,10 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-06 21:53:31",
+      "update_time": "2019-06-06 21:56:19",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195549",
       "fail_count": 0,
       "capability": [
         "20"
@@ -72,8 +72,8 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-06 21:53:49",
+      "status": "BUSY",
+      "update_time": "2019-06-06 21:54:15",
       "job_type": "PB",
       "test_suite_id": "20",
       "main_clno": "PB-195547",
@@ -86,7 +86,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-06 21:53:35",
+      "update_time": "2019-06-06 21:55:34",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -99,7 +99,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-06 21:53:25",
+      "update_time": "2019-06-06 21:55:25",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -111,16 +111,16 @@
     {
       "host_name": "ATHQA038D",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-06 21:53:06",
+      "status": "BUSY",
+      "update_time": "2019-06-06 21:55:10",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195546",
       "fail_count": 0,
       "capability": [
         "20"
       ]
     }
   ],
-  "estimate_time": 59
+  "estimate_time": 116
 }
