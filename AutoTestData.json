@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-06 22:40:12",
+      "update_time": "2019-06-06 22:42:15",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 38
+  "estimate_time": 35
 }
