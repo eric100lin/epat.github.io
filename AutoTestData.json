@@ -4,7 +4,7 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jason.chen",
-  "max_queue_time": 30,
+  "max_queue_time": 32,
   "max_queue_pb_id": "PB-195575",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 88
+  "estimate_time": 85
 }
