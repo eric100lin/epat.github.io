@@ -4,19 +4,19 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jason.chen",
-  "max_queue_time": 2,
-  "max_queue_pb_id": "PB-195595",
+  "max_queue_time": 3,
+  "max_queue_pb_id": "PB-195597",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": 4,
+      "queue": 1,
       "tree_day_avg": "60",
       "last_week_avg": "58",
       "pass_rate": "90",
-      "pass_rate_summary": "(52/58)",
+      "pass_rate_summary": "(53/59)",
       "top10_pass_rate": "100",
       "top20_pass_rate": "90",
       "top30_pass_rate": "87"
@@ -47,10 +47,10 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-07 08:37:26",
+      "update_time": "2019-06-07 08:39:41",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195597",
       "fail_count": 0,
       "capability": [
         "20"
@@ -85,11 +85,11 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-07 08:37:46",
+      "status": "BUSY",
+      "update_time": "2019-06-07 08:38:51",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195594",
       "fail_count": 0,
       "capability": [
         "20"
@@ -98,11 +98,11 @@
     {
       "host_name": "ATHQA038C",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-07 08:37:13",
+      "status": "BUSY",
+      "update_time": "2019-06-07 08:39:18",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195595",
       "fail_count": 0,
       "capability": [
         "20"
@@ -111,16 +111,16 @@
     {
       "host_name": "ATHQA038D",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-06-07 07:43:12",
+      "status": "IDLE",
+      "update_time": "2019-06-07 08:39:54",
       "job_type": "PB",
-      "test_suite_id": "20",
-      "main_clno": "PB-195592",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20"
       ]
     }
   ],
-  "estimate_time": 65
+  "estimate_time": 66
 }
