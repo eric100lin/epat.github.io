@@ -4,7 +4,7 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jason.chen",
-  "max_queue_time": 5,
+  "max_queue_time": 7,
   "max_queue_pb_id": "PB-195596",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-07 08:42:04",
+      "update_time": "2019-06-07 08:44:06",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -112,7 +112,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-07 08:41:59",
+      "update_time": "2019-06-07 08:44:04",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 108
+  "estimate_time": 105
 }
