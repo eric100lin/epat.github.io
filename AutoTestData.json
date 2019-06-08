@@ -12,7 +12,7 @@
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": 1,
+      "queue": "0",
       "tree_day_avg": "60",
       "last_week_avg": "61",
       "pass_rate": "100",
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-06-08 21:08:22",
+      "update_time": "2019-06-08 21:10:24",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-08 21:07:58",
+      "update_time": "2019-06-08 21:11:02",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-08 21:08:48",
+      "update_time": "2019-06-08 21:10:50",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -72,11 +72,11 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-06-08 21:07:52",
+      "status": "BUSY",
+      "update_time": "2019-06-08 21:09:56",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-195712",
       "fail_count": 0,
       "capability": [
         "20"
@@ -86,7 +86,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-08 21:08:21",
+      "update_time": "2019-06-08 21:10:23",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -99,7 +99,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-08 21:08:41",
+      "update_time": "2019-06-08 21:10:45",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -112,7 +112,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-08 21:08:04",
+      "update_time": "2019-06-08 21:11:07",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 60
+  "estimate_time": 59
 }
