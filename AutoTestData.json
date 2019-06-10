@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jason.chen",
-  "max_queue_time": 60,
-  "max_queue_pb_id": "PB-196435",
+  "max_queue_time": 63,
+  "max_queue_pb_id": "PB-196470",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -13,13 +13,13 @@
       "test_suite_id": "20",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "55",
+      "tree_day_avg": "56",
       "last_week_avg": "61",
-      "pass_rate": "38",
-      "pass_rate_summary": "(9/24)",
-      "top10_pass_rate": "60",
-      "top20_pass_rate": "35",
-      "top30_pass_rate": "38"
+      "pass_rate": "42",
+      "pass_rate_summary": "(11/26)",
+      "top10_pass_rate": "80",
+      "top20_pass_rate": "45",
+      "top30_pass_rate": "42"
     }
   ],
   "test_suite_list_hb": [
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-06-10 19:38:36",
+      "update_time": "2019-06-10 19:40:37",
       "job_type": "HB,PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -46,11 +46,11 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-06-10 18:43:25",
+      "status": "IDLE",
+      "update_time": "2019-06-10 19:40:33",
       "job_type": "PB",
-      "test_suite_id": "20",
-      "main_clno": "PB-196533",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20"
@@ -73,7 +73,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 19:38:20",
+      "update_time": "2019-06-10 19:41:24",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -85,11 +85,11 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-06-10 18:43:22",
+      "status": "IDLE",
+      "update_time": "2019-06-10 19:40:35",
       "job_type": "PB",
-      "test_suite_id": "20",
-      "main_clno": "PB-196470",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20"
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 42
+  "estimate_time": 41
 }
