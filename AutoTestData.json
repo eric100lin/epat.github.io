@@ -13,10 +13,10 @@
       "test_suite_id": "20",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "57",
-      "last_week_avg": "61",
-      "pass_rate": "54",
-      "pass_rate_summary": "(21/39)",
+      "tree_day_avg": "55",
+      "last_week_avg": "60",
+      "pass_rate": "55",
+      "pass_rate_summary": "(21/38)",
       "top10_pass_rate": "70",
       "top20_pass_rate": "75",
       "top30_pass_rate": "63"
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 22:38:27",
+      "update_time": "2019-06-10 22:41:29",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,10 +60,10 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 22:39:09",
+      "update_time": "2019-06-10 22:41:18",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-196593",
       "fail_count": 0,
       "capability": [
         "20"
@@ -73,7 +73,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 22:38:27",
+      "update_time": "2019-06-10 22:41:32",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -86,7 +86,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 22:38:29",
+      "update_time": "2019-06-10 22:41:32",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -99,7 +99,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 22:38:53",
+      "update_time": "2019-06-10 22:40:55",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -110,7 +110,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-10 22:39:18",
+      "update_time": "2019-06-10 22:41:20",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -120,5 +120,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 55
 }
