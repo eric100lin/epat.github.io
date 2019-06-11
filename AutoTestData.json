@@ -4,7 +4,7 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jason.chen",
-  "max_queue_time": 6,
+  "max_queue_time": 8,
   "max_queue_pb_id": "PB-196866",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
@@ -12,7 +12,7 @@
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": 1,
+      "queue": 2,
       "tree_day_avg": "55",
       "last_week_avg": "61",
       "pass_rate": "58",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 80
+  "estimate_time": 85
 }
