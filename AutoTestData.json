@@ -33,11 +33,11 @@
     {
       "host_name": "ATHQA034C",
       "device": "3",
-      "status": "BUSY",
-      "update_time": "2019-06-11 07:28:31",
-      "job_type": "HB,PB",
-      "test_suite_id": "20",
-      "main_clno": "20190611031440",
+      "status": "IDLE",
+      "update_time": "2019-06-11 11:45:37",
+      "job_type": "HB",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 3,
       "capability": [
         "20"
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 55
+  "estimate_time": 53
 }
