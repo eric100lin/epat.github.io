@@ -12,7 +12,7 @@
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": "0",
+      "queue": 1,
       "tree_day_avg": "62",
       "last_week_avg": "59",
       "pass_rate": "97",
@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 18:14:16",
+      "update_time": "2019-06-12 18:16:19",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -99,7 +99,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 18:14:18",
+      "update_time": "2019-06-12 18:16:24",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -112,15 +112,15 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 18:14:18",
+      "update_time": "2019-06-12 18:17:19",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-197727",
       "fail_count": 0,
       "capability": [
         "20"
       ]
     }
   ],
-  "estimate_time": 56
+  "estimate_time": 62
 }
