@@ -5,14 +5,14 @@
   "sub_category": "Sony",
   "pm": "jason.chen",
   "max_queue_time": 3,
-  "max_queue_pb_id": "PB-197496",
+  "max_queue_pb_id": "PB-197502",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
       "test_suite": "Video_Silent",
       "test_suite_id": "20",
       "job_type": "PB",
-      "queue": "0",
+      "queue": 1,
       "tree_day_avg": "60",
       "last_week_avg": "59",
       "pass_rate": "95",
@@ -47,7 +47,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 13:49:05",
+      "update_time": "2019-06-12 13:52:17",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,7 +60,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 13:49:07",
+      "update_time": "2019-06-12 13:52:19",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,7 +73,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 13:49:07",
+      "update_time": "2019-06-12 13:52:20",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -86,7 +86,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 13:49:14",
+      "update_time": "2019-06-12 13:51:22",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -99,7 +99,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 13:49:06",
+      "update_time": "2019-06-12 13:52:18",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -112,7 +112,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-06-12 13:49:05",
+      "update_time": "2019-06-12 13:52:16",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -122,5 +122,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 60
 }
