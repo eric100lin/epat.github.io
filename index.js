@@ -1,4 +1,4 @@
-var preProcessGroupDate = function p(groupList) {
+var preProcessGroupData = function p(groupList) {
     groupList.forEach(function(group) {
         var now = new Date()
         var testSuiteDict = group.test_suite_list.reduce((dict, suite) => {
@@ -58,14 +58,12 @@ var app = new Vue({
             fetch('./AutoTestData.json')
                 .then(response => response.json())
                 .then(json => {
-                    console.log(this)
-                    console.log(this.app)
-                    console.log(this.app.groups)
-                    console.log(app.groups)
-                    app.groups.push(json)
+                    groupsList = []
+                    groupsList.push(json)
+                    return groupsList
                 })
-                .then(() => {
-                    preProcessGroupDate(app.groups)
+                .then(groupsList => {
+                    app.groups = preProcessGroupData(groupsList)
                 })
         }
         refreshAutoTestInfo()
