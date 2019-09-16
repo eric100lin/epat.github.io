@@ -58,9 +58,9 @@ var app = new Vue({
             fetch('./AutoTestData.json')
                 .then(response => response.json())
                 .then(json => {
-                    app.groups.push(json)
+                    this.app.groups.push(json)
                 })
-            preProcessGroupDate(app.groups)
+            preProcessGroupDate(this.app.groups)
         }
         refreshAutoTestInfo()
         setInterval(refreshAutoTestInfo, 120000);
