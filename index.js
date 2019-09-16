@@ -64,7 +64,7 @@ var app = new Vue({
                     console.log(app.groups)
                     app.groups.push(json)
                 })
-                .then(() -> {
+                .then(() => {
                     preProcessGroupDate(app.groups)
                 })
         }
