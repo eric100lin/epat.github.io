@@ -46,8 +46,8 @@ While($true)
     #For Production
     Write-Host "Update $output at $start_time"
     git add --all
-    #git commit -m "Update $output at $start_time"
-    #git push origin master
+    git commit -m "Update $output at $start_time"
+    git push origin master
     #For Testing
     #git status
 
