@@ -58,6 +58,9 @@ var app = new Vue({
             fetch('./AutoTestData.json')
                 .then(response => response.json())
                 .then(json => {
+                    console.log(this)
+                    console.log(this.app)
+                    console.log(this.app.groups)
                     this.app.groups.push(json)
                 })
             preProcessGroupDate(this.app.groups)
