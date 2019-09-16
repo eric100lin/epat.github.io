@@ -63,7 +63,8 @@ var app = new Vue({
                     return groupsList
                 })
                 .then(groupsList => {
-                    app.groups = preProcessGroupData(groupsList)
+                    preProcessGroupData(groupsList)
+                    app.groups = groupsList
                 })
         }
         refreshAutoTestInfo()
