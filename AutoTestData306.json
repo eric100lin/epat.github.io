@@ -1,0 +1,68 @@
+{
+  "group_id": "306",
+  "project_name": "SONY_2K20_Valhalla",
+  "category": "AN",
+  "sub_category": "Sony",
+  "pm": "jason.chen",
+  "max_queue_time": 0,
+  "max_queue_pb_id": "",
+  "max_queue_over_2_hours": 0,
+  "test_suite_list": [],
+  "test_suite_list_hb": [
+    {
+      "test_suite": "Video_Silent",
+      "test_suite_id": "20",
+      "job_type": "HB"
+    }
+  ],
+  "test_pc_list": [
+    {
+      "host_name": "ATHQA036A",
+      "device": "2",
+      "status": "IDLE",
+      "update_time": "2019-09-16 21:57:54",
+      "job_type": "HB",
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 0,
+      "capability": [
+        "20"
+      ]
+    },
+    {
+      "host_name": "ATHQA037D",
+      "device": "2",
+      "status": "IDLE",
+      "update_time": "2019-09-16 21:57:27",
+      "job_type": "HB",
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 0,
+      "capability": [
+        "20"
+      ]
+    },
+    {
+      "host_name": "ATHQA038A",
+      "device": "2",
+      "status": "IDLE",
+      "update_time": "2019-09-16 21:57:30",
+      "job_type": "HB",
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 51,
+      "capability": [
+        "50",
+        "53",
+        "55",
+        "5",
+        "80",
+        "82",
+        "83",
+        "54",
+        "20"
+      ]
+    }
+  ],
+  "estimate_time": 0
+}

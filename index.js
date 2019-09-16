@@ -1,3 +1,10 @@
+var cdids = { 
+    306 : "http://sony.mediatek.taipei/Images/icon-valhalla.png",  //SONY_2K20_Valhalla
+    329 : "http://sony.mediatek.taipei/Images/icon-uroboros3.png", //SONY_2K20_Uroboros3
+    144 : "http://sony.mediatek.taipei/Images/icon-uroboros2.png", //Uroboros2-P
+    271 : "http://sony.mediatek.taipei/Images/icon-uroboros3.png"  //Uroboros3-P
+}
+
 var preProcessGroupData = function p(groupList) {
     groupList.forEach(function(group) {
         var now = new Date()
@@ -5,6 +12,7 @@ var preProcessGroupData = function p(groupList) {
             dict[suite.test_suite_id] = suite.test_suite
             return dict
         }, {})
+        group.cdid_image = cdids[group.group_id]
         group.estM = group.estimate_time % 60
         group.estH = (group.estimate_time - group.estM) / 60
         group.dStat = {'BUSY':0,'IDLE':0,'ABNORMAL':0}
@@ -55,17 +63,17 @@ var app = new Vue({
     created () {
         this.$vuetify.theme.dark = true
         var refreshAutoTestInfo = function f() {
-            fetch('./AutoTestData.json')
-                .then(response => response.json())
-                .then(json => {
-                    groupsList = []
-                    groupsList.push(json)
-                    return groupsList
-                })
-                .then(groupsList => {
-                    preProcessGroupData(groupsList)
-                    app.groups = groupsList
-                })
+            var groupsList = []
+            Promise.all(Object.keys(cdids).map(cdid => 
+                fetch('./AutoTestData${cdid}.json')
+            )).then(responses =>
+                Promise.all(responses.map(response => response.json()))
+            ).then(jsons => {
+                Promise.all(jsons.map(json => groupsList.push(json)))
+            }).then(() => {
+                preProcessGroupData(groupsList)
+                app.groups = groupsList
+            })
         }
         refreshAutoTestInfo()
         setInterval(refreshAutoTestInfo, 120000);
