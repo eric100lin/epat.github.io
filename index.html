@@ -1,270 +1,117 @@
 <!DOCTYPE html>
-<!-- saved from url=(0058)http://ep.mediatek.inc/Monitor/AutoTestDashboard#group_144 -->
-<html lang="en" class="k-webkit k-webkit74"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Group 144</title>
-    <script src="./index_files/jquery-1.9.1.min.js.下載"></script>
-    <script src="./index_files/jquery-ui-1.9.1.min.js.下載"></script>
-    <script src="./index_files/bootstrap.js.下載"></script>
-    <script src="./index_files/html5shiv.js.下載"></script>
-    <script src="./index_files/respond.min.js.下載"></script>
-    <script src="./index_files/kendo.all.min.js.下載"></script>
-    <script src="./index_files/gridviewScroll.min.js.下載"></script>
-    <script src="./index_files/Chart.bundle.js.下載"></script>
-    <script src="./index_files/chosen.jquery.js.下載"></script>
-    <script src="./index_files/amcharts.js.下載"></script>
-    <script type="text/javascript" src="./index_files/json2.js.下載"></script>
-    <script src="./index_files/serial.js.下載"></script>
-    <script type="text/javascript" src="./index_files/jquery.superslides.js.下載"></script>
-    <link href="./index_files/kendo.common.min.css" rel="stylesheet">
-    <link href="./index_files/kendo.default.min.css" rel="stylesheet">
+<html>
+    <head>
+        <!-- Vue.js: production version, optimized for size and speed -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <!-- Vuetify -->
+        <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+        <!-- Google Material Design Icons -->
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
 
-    <link href="./index_files/GridviewScroll.css" rel="stylesheet">
-    <link href="./index_files/chosen.min.css" rel="stylesheet">
+        <div id="app">
+            <v-app id="inspire">
+            <v-app-bar app clipped-left>
+              <v-toolbar-title>Sony AutoTest DashBoard</v-toolbar-title>
+            </v-app-bar>
 
-    <link href="./index_files/superslides.css" rel="stylesheet">
+            <v-content>
+                <v-container fluid>
+                    <v-data-iterator
+                        :items="groups"
+                        :items-per-page.sync="itemsPerPage"
+                        :footer-props="{ itemsPerPageOptions }"
+                    >
+                        <template v-slot:default="props">
+                            <v-row>
+                                <v-col
+                                    v-for="group in props.items"
+                                    :key="group.project_name"
+                                    cols="12"
+                                    sm="6"
+                                    md="4"
+                                    lg="4"
+                                >
+                                    <v-card>
+                                        <v-list-item three-line>
+                                            <v-list-item-avatar tile size="60" color="grey">
+                                                <v-img src="http://sony.mediatek.taipei/Images/icon-uroboros3.png"/>
+                                            </v-list-item-avatar>
+                                            <v-list-item-content>
+                                                <v-list-item-title class="headline mb-1">
+                                                    {{ group.project_name }} ({{ group.category }} {{ group.sub_category }})
+                                                </v-list-item-title>
+                                                <v-list-item-subtitle>
+                                                    Estimated Time of Completion: {{ group.estH }} H {{ group.estM }} M Device Count: {{ group.test_pc_list.length }}<br/>
+                                                    Device Status: [ 
+                                                        Busy: {{ group.dStat['BUSY'] }} 
+                                                        Idle: {{ group.dStat['IDLE'] }} 
+                                                        <font class="red" v-if="group.dStat['ABNORMAL']">
+                                                            Abnormal: {{ group.dStat['ABNORMAL'] }} 
+                                                        </font>
+                                                    ]
+                                                </v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
+                                        <v-data-table
+                                            :headers="test_suite_headers"
+                                            :items="group.test_suite_list"
+                                            hide-default-footer
+                                            class="elevation-1" dense
+                                        >
+                                            <template v-slot:item.queue="{ item }">
+                                                <font :class="getQueueColor(item.queue)">{{ item.queue }}</font>
+                                            </template>
+                                            <template v-slot:item.tree_day_avg="{ item }">
+                                                <font :class="getNowAvgColor(item.tree_day_avg)">{{ item.tree_day_avg }}</font>
+                                            </template>
+                                            <template v-slot:item.pass_rate="{ item }">
+                                                <font :class="getPassRateColor(item.pass_rate)">
+                                                {{ item.pass_rate }} {{ item.pass_rate_summary }}
+                                                </font>
+                                            </template>
+                                            <template v-slot:item.top30_pass_rate="{ item }">
+                                                <font :class="getPassRateColor(item.top30_pass_rate)">{{ item.top30_pass_rate }}</font>
+                                                <font :class="getPassRateColor(item.top20_pass_rate)">{{ item.top20_pass_rate }}</font>
+                                                <font :class="getPassRateColor(item.top10_pass_rate)">{{ item.top10_pass_rate }}</font>
+                                            </template>
+                                        </v-data-table>
+                                        <v-data-table
+                                            :headers="test_pc_headers"
+                                            :items="group.test_pc_list"
+                                            hide-default-footer
+                                            class="elevation-1" 
+                                        >
+                                            <template v-slot:item.job_type="{ item }">
+                                                <v-chip :color="getJobTypeColor(item.job_type)" 
+                                                        class="ml-0" label>
+                                                    <v-icon label v-text="getJobTypeIcon(item.job_type)"></v-icon>
+                                                    {{ item.job_type }}
+                                                </v-chip>
+                                            </template>
+                                            <template v-slot:item.host_name="{ item }">
+                                                <div v-text="getHostPcCatDevice(item)"></div>
+                                            </template>
+                                            <template v-slot:item.main_clno="{ item }">
+                                                <div v-html="getTestStatus(item)"></div>
+                                            </template>
+                                        </v-data-table>
+                                    </v-card>
+                                </v-col>
+                            </v-row>
+                        </template>
+                    </v-data-iterator>
+                </v-container>
+            </v-content>
 
-    <link href="./index_files/css" rel="stylesheet">
-
-</head>
-<body style="margin: 0px;">
-    <!-- Fixed navbar -->
-    <br>
-    
-    <div class="dashboardContain">
-        <noscript>
-            <div class="alert">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Warning!</strong> Please enable JavaScript in your browser!
-            </div>
-        </noscript>
-
-        <div class="">
-            <div id="content" class="span12">
-                <div>
-                    <style>
-                        hr {
-                            display: block;
-                            height: 1px;
-                            border: 0;
-                            border-top: 1px solid white;
-                            margin: 1em 0;
-                            padding: 0;
-                        }
-
-                        small {
-                            color:white;
-                        }
-
-                        .blink {
-                            animation-duration: 0.5s;
-                            animation-name: blink;
-                            animation-iteration-count: infinite;
-                            animation-direction: alternate;
-                            animation-timing-function: ease-in-out;
-                        }
-                        @keyframes blink {
-                            from {
-                                opacity: 1;
-                            }
-                            to {
-                                opacity: 0.2;
-                            }
-                        }
-                    </style>
-
-                    <div style="background-color:black">
-                        <span id="now" style="font-size:60px;color:#FFFFFF">Current Time: 2019/06/01 23:28:52</span>
-                        <span style="font-size:60px;color:#FFFFFF">Slide:<span id="slide" style="color: rgb(255, 0, 0);">Off</span></span>
-                        <hr>
-                        <div id="group_144" style="background-color: black; display: block; left: 3789px; overflow: hidden; height: 100%; width: 3789px; top: 0px; z-index: 2;">
-                        </div>
-                    </div>
-
-<script>
-    var started = false; //slide
-    var group_list = [144]; //add group
-
-    $(document).ready(function () {
-        refreshAutoTestInfo();
-        setInterval(setTime, 1000);
-        setInterval(refreshAutoTestInfo, 120000);
-    });
-
-    function refreshAutoTestInfo()
-    {
-        $.getJSON("./AutoTestData.json",
-           function (obj) {
-               $("#group_" + obj.group_id).empty();
-               var html = '';
-               //project information
-               html += '<p style="margin-top:15px;color:yellow;font-size:50px"><strong>' + obj.project_name + '<small> (' + obj.category + ' ' + obj.sub_category + ' ' + obj.pm + ')</small></strong></p>';
-
-               //estimated time of completion & device count
-               html += '<p style="margin-top:15px;color:white;font-size:55px">Estimated Time of Completion: <strong style="font-size:60px">' + ((obj.estimate_time - (obj.estimate_time % 60)) / 60) + '</strong> <small style="color:#DDDDDD">H</small> <strong style="font-size:60px">' + (obj.estimate_time % 60) + '</strong> <small style="color:#DDDDDD">M</small> <small style="margin-left:50px;font-size:55px">Device Count:<small> <strong style="font-size:60px">' + obj.test_pc_list.length + '</strong></p>';
-
-               //project test suite information
-               html += '<table style="border:0px solid black;color:#FFFFFF;font-size:30px;width:100%">';
-               var test_suite_mapping = [], test_suite_mapping_hb = [];
-               for (var index in obj.test_suite_list) {
-                   test_suite_mapping[obj.test_suite_list[index].test_suite_id] = obj.test_suite_list[index].test_suite;
-                   html += '<tr style="font-size:55px">';
-                   html += '<td style="width:37%;color:#DDD">(Test Suite ID: ' + obj.test_suite_list[index].test_suite_id + ') ' + obj.test_suite_list[index].test_suite + '</td>';
-                   html += '<td style="width:5%;color:' + (obj.test_suite_list[index].queue > 8 ? 'red' : '#DDD') + '">Queue: ' + obj.test_suite_list[index].queue + '</td>';
-                   html += '<td style="width:9%;color:' + (obj.test_suite_list[index].tree_day_avg > obj.test_suite_list[index].last_week_avg + 10 ? 'red' : '#DDD') + '">Now: ' + obj.test_suite_list[index].tree_day_avg + ' M</td>';
-                   html += '<td style="width:9%;color:#DDD">Week: ' + obj.test_suite_list[index].last_week_avg + ' M</td>';
-                   html += '<td style="width:9%;color:' + (obj.test_suite_list[index].pass_rate < 60 ? 'red' : obj.test_suite_list[index].pass_rate < 70 ? '#FF8800' : obj.test_suite_list[index].pass_rate < 80 ? '#FFFF00' : '#DDD') + '">24H: ' + obj.test_suite_list[index].pass_rate + '%' + obj.test_suite_list[index].pass_rate_summary + '</td>';
-                   html += '<td style="width:9%;color:' + (obj.test_suite_list[index].top30_pass_rate < 60 ? 'red' : obj.test_suite_list[index].top30_pass_rate < 70 ? '#FF8800' : obj.test_suite_list[index].top30_pass_rate < 80 ? '#FFFF00' : '#DDD') + '">Top 30: ' + obj.test_suite_list[index].top30_pass_rate + '%</td>';
-                   html += '<td style="width:9%;color:' + (obj.test_suite_list[index].top20_pass_rate < 60 ? 'red' : obj.test_suite_list[index].top20_pass_rate < 70 ? '#FF8800' : obj.test_suite_list[index].top20_pass_rate < 80 ? '#FFFF00' : '#DDD') + '">Top 20: ' + obj.test_suite_list[index].top20_pass_rate + '%</td>';
-                   html += '<td style="width:9%;color:' + (obj.test_suite_list[index].top10_pass_rate < 60 ? 'red' : obj.test_suite_list[index].top10_pass_rate < 70 ? '#FF8800' : obj.test_suite_list[index].top10_pass_rate < 80 ? '#FFFF00' : '#DDD') + '">Top 10: ' + obj.test_suite_list[index].top10_pass_rate + '%</td>';
-                   html += '</tr>';
-               }
-               html += '</table>';
-               html += '<br>';
-
-               for (var index in obj.test_suite_list_hb) {
-                   test_suite_mapping_hb[obj.test_suite_list_hb[index].test_suite_id] = obj.test_suite_list_hb[index].test_suite;
-               }
-
-               //project test pc
-               var pc_html = '<table style="border:0px solid black;color:#FFFFFF;font-size:30px;width:100%">';
-               var busy = 0, idle = 0, abnormal = 0;
-
-               for(var i=0; i <= (Math.ceil(obj.test_pc_list.length * 1.0 / 5) * 6); i++)
-               {
-                   if (i > 0 && i % 6 == 0) {
-                       pc_html += '</tr>';
-                   }
-                   if (i % 6 == 0)
-                   {
-                       pc_html += '<tr>';
-                   }
-                   if (i < obj.test_pc_list.length)
-                   {
-                       pc_html += '<td valign="top" style="border:1px solid white;width:16.6%;height:400px;padding:20px;">';
-                       pc_html += '<p title="' + obj.test_pc_list[i].status + ',' + obj.test_pc_list[i].update_time + ',' + obj.test_pc_list[i].main_clno + '"><strong style="color:#99FF33">' + obj.test_pc_list[i].host_name + '</strong><strong style="padding-left:20px;color:#99FF33">' + obj.test_pc_list[i].device + '</strong><strong style="padding-left:30px">[' + obj.test_pc_list[i].job_type + ']</strong></p>';
-
-                       var difftime = Math.round((((new Date() - new Date(obj.test_pc_list[i].update_time)) % 86400000) % 3600000) / 60000);
-                       if (obj.test_pc_list[i].status == "BUSY" && difftime > 120) {
-                           obj.test_pc_list[i].status = "ABNORMAL";
-                       }
-                       if (obj.test_pc_list[i].status == "BUSY" && obj.test_pc_list[i].main_clno == '' && difftime > 10)
-                       {
-                           obj.test_pc_list[i].status = "ABNORMAL";
-                       }
-                       if (obj.test_pc_list[i].status == "IDLE" && difftime > 20) {
-                           obj.test_pc_list[i].status = "ABNORMAL";
-                       }
-
-                       if (obj.test_pc_list[i].status == "BUSY")
-                       {
-                           var test_suite_name = "";
-                           if (obj.test_pc_list[i].main_clno.indexOf("PB-") < 0)
-                           {
-                               test_suite_name = test_suite_mapping_hb[obj.test_pc_list[i].test_suite_id];
-                           }
-                           else
-                           {
-                               test_suite_name = test_suite_mapping[obj.test_pc_list[i].test_suite_id];
-                           }
-                           pc_html += '<p class="blink"><strong>Processing: ' + test_suite_name + ' (' + obj.test_pc_list[i].main_clno + ')</strong></p>';
-                           busy++;
-                       }
-                       else if (obj.test_pc_list[i].status == "ABNORMAL")
-                       {
-                           pc_html += '<p class="blink" style="color:red"><strong>Processing:ABNORMAL</strong></p>';
-                           abnormal++;
-                       }
-                       else
-                       {
-                           idle++;
-                       }
-
-                       pc_html += '<p>Response Time: <strong>' + obj.test_pc_list[i].update_time + '</strong></p>';
-                       pc_html += '<p>Capability: <strong>' + obj.test_pc_list[i].capability.sort().join(', ') + '</strong></p>';
-                       pc_html += '<p ' + (obj.test_pc_list[i].fail_count > 5 ? 'class="blink" style="color:red"' : '') + '>Continue Fail: <strong>' + obj.test_pc_list[i].fail_count + '</strong></p>';
-                       pc_html += '</td>';
-                   }
-
-               }
-
-               pc_html += '</table>';
-
-               //estimated time of completion & device count
-               html += '<p style="color:white;font-size:50px"><span>Device Status: [ <span>Busy: ' + busy + '</span><span style="margin-left:30px;">Idle: ' + idle + '</span>' + (abnormal > 0 ? ' <span style="color:red;margin-left:30px;">Abnormal: ' + abnormal + '</span>' : '') + ' ]' + '</span><span style="margin-left:80px;">Queue Over 2 Hours: ' + obj.max_queue_over_2_hours + '</span><span style="padding-left:80px;">Max Queue Time: ' + ((obj.max_queue_time - (obj.max_queue_time % 60)) / 60) + 'H ' + (obj.max_queue_time % 60) + 'M ' + (obj.max_queue_pb_id != '' ? ' (' + obj.max_queue_pb_id + ')' : '') + '</p>';
-
-               html += pc_html;
-
-               $("#group_" + obj.group_id).append(html);
-        });
-    }
-
-    function setTime() {
-        var d = new Date();
-        var yy = d.getFullYear();
-        var mm = addZero(d.getMonth() + 1);
-        var dd = addZero(d.getDate());
-        var h = addZero(d.getHours());
-        var m = addZero(d.getMinutes());
-        var s = addZero(d.getSeconds());
-        $("#now").text("Current Time: " + yy + "/" + mm + "/" + dd + " " + h + ":" + m + ":" + s);
-    }
-
-    function addZero(i) {
-        if (i < 10) {
-            i = "0" + i;
-        }
-        return i;
-    }
-
-</script>
-
-                </div>
-            </div>
+            <v-footer app>
+              <span>&copy; 2019</span>
+            </v-footer>
+          </v-app>
         </div>
 
-        
-    </div>
-    
-
-
-<script>
-    $(function () {
-        var re = /[a-zA-Z]+\.[a-zA-Z]+/;
-
-    });
-</script>
-
-    <canvas id="NOTEPAD" class=" cross" width="3789" height="2026"></canvas>
-    <div id="NOTEPAD_controls" style="opacity: 1; top: 2px; left: 3296px;">
-        <div class="NOTEPAD_controls_draw">
-            <div class="NOTEPAD_controls_draw_option pen" title="Pencil - draw a custom line"></div>
-            <div class="NOTEPAD_controls_draw_option eyedropper" title="Color picker - pick a color from the web page or your drawings and use it for drawing"></div>
-            <div class="NOTEPAD_controls_draw_option text" title="Text - insert text"></div>
-            <div class="NOTEPAD_controls_draw_option line" title="Line - draw a straight line"></div>
-            <div class="NOTEPAD_controls_draw_option quadratic_curve" title="Quadratic curve - draw a quadratic curve"></div>
-                <div class="NOTEPAD_controls_draw_option bezier_curve" title="Bezier curve - draw a bezier curve"></div>
-            <div class="NOTEPAD_controls_draw_option polygon" title="Polygon - draw a polygon"></div>
-            <div class="NOTEPAD_controls_draw_option circle" title="Ellipse - draw an ellipse or a circle"></div>
-            <div class="NOTEPAD_controls_draw_option rectangle selected" title="Rectangle - draw a rectangle or a square"></div>
-            <div class="NOTEPAD_controls_draw_option cursor" title="Cursor - interact with the web page"></div>
-            <div class="NOTEPAD_controls_draw_option eraser" title="Eraser - erase part of your drawings"></div>
-            <div class="NOTEPAD_controls_draw_option fill" title="Paint Bucket - fill an area"></div>
-        </div>
-        <div class="NOTEPAD_controls_color"><input type="color" title="Select a color"></div>
-        <div class="NOTEPAD_controls_range alpha_control"><input type="range" min="0" max="1" step="0.01" title="Select transparency"><p>100%</p></div>
-        <div class="NOTEPAD_controls_range size_control"><input type="range" min="1" max="20" step="1" title="Select line width"><p>100%</p></div>
-        <div class="NOTEPAD_controls_control">
-            <div class="NOTEPAD_controls_control_option backBtn " title="Step backward"></div>
-            <div class="NOTEPAD_controls_control_option nextBtn " title="Step forward"></div>
-            <div class="NOTEPAD_controls_control_option eraseAllBtn" title="Erase all"></div>
-            <div class="NOTEPAD_controls_control_option prtBtn" title="Take a screenshot of the current web page with your drawings"></div>
-            <div class="NOTEPAD_controls_control_option hideCtrlBtn" title="Close control panel (Click the extension icon to re-open)"></div>
-            <div class="NOTEPAD_controls_control_option exitBtn" title="Quit"></div>
-            <div class="settingsBtn" title="Settings"></div>
-        </div>
-    </div>
-</body>
+        <script src="index.js"></script>
+    </body>
 </html>
