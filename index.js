@@ -65,7 +65,7 @@ var app = new Vue({
         var refreshAutoTestInfo = function f() {
             var groupsList = []
             Promise.all(Object.keys(cdids).map(cdid => 
-                fetch('./AutoTestData${cdid}.json')
+                fetch(`./AutoTestData${cdid}.json`)
             )).then(responses =>
                 Promise.all(responses.map(response => response.json()))
             ).then(jsons => {
