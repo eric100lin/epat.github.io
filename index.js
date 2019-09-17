@@ -1,8 +1,8 @@
 var cdids = { 
-    306 : "http://sony.mediatek.taipei/Images/icon-valhalla.png",  //SONY_2K20_Valhalla
-    329 : "http://sony.mediatek.taipei/Images/icon-uroboros3.png", //SONY_2K20_Uroboros3
-    144 : "http://sony.mediatek.taipei/Images/icon-uroboros2.png", //Uroboros2-P
-    271 : "http://sony.mediatek.taipei/Images/icon-uroboros3.png"  //Uroboros3-P
+    306 : "image/Valhalla-10.png",  //SONY_2K20_Valhalla
+    329 : "image/Uroboros3-10.png", //SONY_2K20_Uroboros3
+    144 : "image/Uroboros3-P.png", //Uroboros2-P
+    271 : "image/Uroboros3-P.png"  //Uroboros3-P
 }
 
 var preProcessGroupData = function p(groupList) {
