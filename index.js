@@ -66,8 +66,8 @@ var app = new Vue({
         this.$vuetify.theme.dark = true
         var refreshAutoTestInfo = function f() {
             var groupsList = []
-            Promise.all(cdidsList.map(cdid => 
-                fetch(`./AutoTestData${cdid}.json`)
+            Promise.all(cdidsList.map(entry => 
+                fetch(`./AutoTestData${entry.cdid}.json`)
             )).then(responses =>
                 Promise.all(responses.map(response => response.json()))
             ).then(jsons => {
