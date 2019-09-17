@@ -56,8 +56,7 @@ var app = new Vue({
             { text: 'Status', value: 'main_clno' },
         ]
         return {
-            itemsPerPageOptions: [4, 8, 12],
-            itemsPerPage: 4,
+            pgbValue: 0,
             test_suite_headers: test_suite_headers,
             test_pc_headers: test_pc_headers,
             groups: [],
@@ -72,6 +71,13 @@ var app = new Vue({
     },
     beforeDestroy () {
         this.clearTimerInterval()
+    },
+    watch: {
+        pgbValue (val) {
+            if (val < 100)
+                return
+            this.pgbValue = 0
+        },
     },
     methods: {
         refreshAutoTestInfo() {
@@ -109,7 +115,7 @@ var app = new Vue({
             if (testPc.fail_count)
                 statusList.push(`Continue Fails: ${testPc.fail_count}`)
             if (testPc.status)
-                statusList.push(`<font class="red">${testPc.status}</font>`)
+                statusList.push(`<font class="red blink">${testPc.status}</font>`)
             return statusList.join('<br/>')
         },
         getPassRateColor (passRate) {
@@ -132,9 +138,15 @@ var app = new Vue({
             return ''
         },
         startTimerInterval () {
+            this.clearTimerInterval()
+
             this.refereshInterval = setInterval(this.refreshAutoTestInfo, 120000)
+            this.pgbInterval = setInterval(() => {
+                this.pgbValue += 0.83
+            }, 1000)
         },
         clearTimerInterval () {
+            clearInterval(this.pgbInterval)
             clearInterval(this.refereshInterval)
         }
     },

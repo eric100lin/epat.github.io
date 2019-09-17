@@ -8,108 +8,110 @@
         <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
         <!-- Google Material Design Icons -->
         <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 
         <div id="app">
             <v-app id="inspire">
-            <v-app-bar app clipped-left>
-              <v-toolbar-title>Sony AutoTest DashBoard</v-toolbar-title>
-            </v-app-bar>
+                <v-app-bar app clipped-left>
+                    <v-toolbar-title>Sony AutoTest DashBoard</v-toolbar-title>
+                </v-app-bar>
 
-            <v-content>
-                <v-container fluid>
-                    <v-data-iterator
-                        :items="groups"
-                        :items-per-page.sync="itemsPerPage"
-                        :footer-props="{ itemsPerPageOptions }"
-                    >
-                        <template v-slot:default="props">
-                            <v-row>
-                                <v-col
-                                    v-for="group in props.items"
-                                    :key="group.project_name"
-                                    cols="12"
-                                    sm="6"
-                                    md="4"
-                                    lg="4"
-                                >
-                                    <v-card>
-                                        <v-list-item three-line>
-                                            <v-list-item-avatar tile size="60" color="grey">
-                                                <v-img v-if="group.cdid_image" :src="`${ group.cdid_image }`"></v-img>
-                                            </v-list-item-avatar>
-                                            <v-list-item-content>
-                                                <v-list-item-title class="headline mb-1">
-                                                    {{ group.project_name }} ({{ group.category }} {{ group.sub_category }})
-                                                </v-list-item-title>
-                                                <v-list-item-subtitle>
-                                                    Estimated Time of Completion: {{ group.estH }} H {{ group.estM }} M Device Count: {{ group.test_pc_list.length }}<br/>
-                                                    Device Status: [ 
-                                                        Busy: {{ group.dStat['BUSY'] }} 
-                                                        Idle: {{ group.dStat['IDLE'] }} 
-                                                        <font class="red" v-if="group.dStat['ABNORMAL']">
-                                                            Abnormal: {{ group.dStat['ABNORMAL'] }} 
-                                                        </font>
-                                                    ]
-                                                </v-list-item-subtitle>
-                                            </v-list-item-content>
-                                        </v-list-item>
-                                        <v-data-table
-                                            :headers="test_suite_headers"
-                                            :items="group.test_suite_list"
-                                            hide-default-footer
-                                            class="elevation-1" dense
-                                        >
-                                            <template v-slot:item.queue="{ item }">
-                                                <font :class="getQueueColor(item.queue)">{{ item.queue }}</font>
-                                            </template>
-                                            <template v-slot:item.tree_day_avg="{ item }">
-                                                <font :class="getNowAvgColor(item.tree_day_avg)">{{ item.tree_day_avg }}</font>
-                                            </template>
-                                            <template v-slot:item.pass_rate="{ item }">
-                                                <font :class="getPassRateColor(item.pass_rate)">
-                                                {{ item.pass_rate }} {{ item.pass_rate_summary }}
-                                                </font>
-                                            </template>
-                                            <template v-slot:item.top30_pass_rate="{ item }">
-                                                <font :class="getPassRateColor(item.top30_pass_rate)">{{ item.top30_pass_rate }}</font>
-                                                <font :class="getPassRateColor(item.top20_pass_rate)">{{ item.top20_pass_rate }}</font>
-                                                <font :class="getPassRateColor(item.top10_pass_rate)">{{ item.top10_pass_rate }}</font>
-                                            </template>
-                                        </v-data-table>
-                                        <v-data-table
-                                            :headers="test_pc_headers"
-                                            :items="group.test_pc_list"
-                                            hide-default-footer
-                                            class="elevation-1" 
-                                        >
-                                            <template v-slot:item.job_type="{ item }">
-                                                <v-chip :color="getJobTypeColor(item.job_type)" 
-                                                        class="ml-0" label>
-                                                    <v-icon label v-text="getJobTypeIcon(item.job_type)"></v-icon>
-                                                    {{ item.job_type }}
-                                                </v-chip>
-                                            </template>
-                                            <template v-slot:item.host_name="{ item }">
-                                                <div v-text="getHostPcCatDevice(item)"></div>
-                                            </template>
-                                            <template v-slot:item.main_clno="{ item }">
-                                                <div v-html="getTestStatus(item)"></div>
-                                            </template>
-                                        </v-data-table>
-                                    </v-card>
-                                </v-col>
-                            </v-row>
-                        </template>
-                    </v-data-iterator>
-                </v-container>
-            </v-content>
+                <v-content>
+                    <v-progress-linear
+                        color="cyan"
+                        buffer-value="0"
+                        :value="pgbValue"
+                        stream
+                    ></v-progress-linear>
 
-            <v-footer app>
-              <span>&copy; 2019</span>
-            </v-footer>
-          </v-app>
+                    <v-container fluid grid-list-md>
+                        <v-layout row wrap>
+                            <v-flex xs12 lg4 sm5 v-for="group in groups">
+
+                                <v-card class="mx-auto">
+                                    <v-list-item three-line>
+                                        <v-list-item-avatar tile size="60">
+                                            <v-img v-if="group.cdid_image" :src="`${ group.cdid_image }`"></v-img>
+                                        </v-list-item-avatar>
+                                        <v-list-item-content>
+                                            <v-list-item-title>
+                                                {{ group.project_name }} ({{ group.category }} {{ group.sub_category }})
+                                            </v-list-item-title>
+                                            <v-list-item-subtitle>
+                                                Estimated Time of Completion: {{ group.estH }} H {{ group.estM }} M Device Count: {{ group.test_pc_list.length }}
+                                            </v-list-item-subtitle>
+                                            <v-list-item-subtitle>
+                                                Device Status: [ 
+                                                    Busy: {{ group.dStat['BUSY'] }} 
+                                                    Idle: {{ group.dStat['IDLE'] }} 
+                                                    <font class="red blink" v-if="group.dStat['ABNORMAL']">
+                                                        Abnormal: {{ group.dStat['ABNORMAL'] }} 
+                                                    </font>
+                                                ]
+                                            </v-list-item-subtitle>
+                                        </v-list-item-content>
+                                    </v-list-item>
+                                    <v-data-table
+                                        :headers="test_suite_headers"
+                                        :items="group.test_suite_list"
+                                        hide-default-footer
+                                        class="elevation-1" dense
+                                    >
+                                        <template v-slot:item.queue="{ item }">
+                                            <font :class="getQueueColor(item.queue)">{{ item.queue }}</font>
+                                        </template>
+                                        <template v-slot:item.tree_day_avg="{ item }">
+                                            <font :class="getNowAvgColor(item.tree_day_avg)">{{ item.tree_day_avg }}</font>
+                                        </template>
+                                        <template v-slot:item.pass_rate="{ item }">
+                                            <font :class="getPassRateColor(item.pass_rate)">
+                                            {{ item.pass_rate }} {{ item.pass_rate_summary }}
+                                            </font>
+                                        </template>
+                                        <template v-slot:item.top30_pass_rate="{ item }">
+                                            <font :class="getPassRateColor(item.top30_pass_rate)">{{ item.top30_pass_rate }}</font>
+                                            <font :class="getPassRateColor(item.top20_pass_rate)">{{ item.top20_pass_rate }}</font>
+                                            <font :class="getPassRateColor(item.top10_pass_rate)">{{ item.top10_pass_rate }}</font>
+                                        </template>
+                                    </v-data-table>
+                                    <v-data-table
+                                        :headers="test_pc_headers"
+                                        :items="group.test_pc_list"
+                                        hide-default-footer
+                                        class="elevation-1" 
+                                    >
+                                        <template v-slot:item.job_type="{ item }">
+                                            <v-chip :color="getJobTypeColor(item.job_type)" 
+                                                    class="ml-0" label>
+                                                <v-icon label v-text="getJobTypeIcon(item.job_type)"></v-icon>
+                                                {{ item.job_type }}
+                                            </v-chip>
+                                        </template>
+                                        <template v-slot:item.host_name="{ item }">
+                                            <div v-text="getHostPcCatDevice(item)"></div>
+                                        </template>
+                                        <template v-slot:item.main_clno="{ item }">
+                                            <div v-html="getTestStatus(item)"></div>
+                                        </template>
+                                    </v-data-table>
+                                </v-card>
+
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-content>
+
+                <v-footer app>
+                    <div class="flex-grow-1"></div>
+                    <div>Developed by 
+                        <a href="mailto:eric-th.lin@mediatek.com">Eric-TH Lin</a> &copy; 
+                        {{ new Date().getFullYear() }}
+                    </div>
+                </v-footer>
+            </v-app>
         </div>
 
         <script src="index.js"></script>
