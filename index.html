@@ -37,7 +37,7 @@
                                     <v-card>
                                         <v-list-item three-line>
                                             <v-list-item-avatar tile size="60" color="grey">
-                                                <v-img :src="`${ group.cdid_image }`"></v-img>
+                                                <v-img v-if="group.cdid_image" :src="`${ group.cdid_image }`"></v-img>
                                             </v-list-item-avatar>
                                             <v-list-item-content>
                                                 <v-list-item-title class="headline mb-1">

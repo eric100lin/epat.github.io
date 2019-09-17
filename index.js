@@ -6,19 +6,20 @@ var cdidsList = [
 ]
 
 var preProcessGroupData = function p(groupList) {
-    groupList.forEach(function(group) {
+    groupList.forEach(group => {
         var now = new Date()
         var testSuiteDict = group.test_suite_list.reduce((dict, suite) => {
             dict[suite.test_suite_id] = suite.test_suite
             return dict
         }, {})
-        group.cdid_image = cdidsList.find(entry=>{
-            return entry.cdid == group.group_id
+        cdidsList.forEach(entry => {
+            if (entry.cdid == group.group_id)
+                group.cdid_image = entry.image
         })
         group.estM = group.estimate_time % 60
         group.estH = (group.estimate_time - group.estM) / 60
         group.dStat = {'BUSY':0,'IDLE':0,'ABNORMAL':0}
-        group.test_pc_list.forEach(function(testPc) {
+        group.test_pc_list.forEach(testPc => {
             if (testPc.main_clno && testPc.test_suite_id in testSuiteDict)
                 testPc.test_suite_id = testSuiteDict[testPc.test_suite_id]
             var res = new Date(testPc.update_time)
