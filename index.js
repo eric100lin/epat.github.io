@@ -1,8 +1,8 @@
 var cdidsList = [
-    { cdid: 329, image: "image/Uroboros3-10.png" }, //SONY_2K20_Uroboros3
-    { cdid: 306, image: "image/Valhalla-10.png", }, //SONY_2K20_Valhalla
-    { cdid: 144, image: "image/Uroboros3-P.png"  }, //Uroboros2-P
-    { cdid: 271, image: "image/Uroboros3-P.png"  }, //Uroboros3-P
+    { cdid: 329, image: "images/Uroboros3-10.png" }, //SONY_2K20_Uroboros3
+    { cdid: 306, image: "images/Valhalla-10.png", }, //SONY_2K20_Valhalla
+    { cdid: 144, image: "images/Uroboros3-P.png"  }, //Uroboros2-P
+    { cdid: 271, image: "images/Uroboros3-P.png"  }, //Uroboros3-P
 ]
 
 var preProcessGroupData = function p(groupList) {
@@ -41,7 +41,7 @@ var preProcessGroupData = function p(groupList) {
 var app = new Vue({
     el: '#app',
     vuetify: new Vuetify(),
-    data () {
+    data: {
         test_suite_headers = [
             { text: 'Suite', value: 'test_suite' },
             { text: 'Queue', value: 'queue', align: 'center' },
@@ -62,14 +62,14 @@ var app = new Vue({
             groups: [],
         }
     },
-    created () {
+    created: {
         this.$vuetify.theme.dark = true
         this.refreshAutoTestInfo()
     },
-    mounted () {
+    mounted: {
         this.startTimerInterval()
     },
-    beforeDestroy () {
+    beforeDestroy: {
         this.clearTimerInterval()
     },
     watch: {
