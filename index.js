@@ -41,7 +41,7 @@ var preProcessGroupData = function p(groupList) {
 var app = new Vue({
     el: '#app',
     vuetify: new Vuetify(),
-    data: {
+    data () {
         test_suite_headers = [
             { text: 'Suite', value: 'test_suite' },
             { text: 'Queue', value: 'queue', align: 'center' },
@@ -62,14 +62,14 @@ var app = new Vue({
             groups: [],
         }
     },
-    created: {
+    created () {
         this.$vuetify.theme.dark = true
         this.refreshAutoTestInfo()
     },
-    mounted: {
+    mounted () {
         this.startTimerInterval()
     },
-    beforeDestroy: {
+    beforeDestroy () {
         this.clearTimerInterval()
     },
     watch: {
@@ -80,7 +80,7 @@ var app = new Vue({
         },
     },
     methods: {
-        refreshAutoTestInfo() {
+        refreshAutoTestInfo () {
             var groupsList = []
             Promise.all(cdidsList.map(entry => 
                 fetch(`./data/AutoTestData${entry.cdid}.json`)
