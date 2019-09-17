@@ -1,19 +1,20 @@
-var cdids = { 
-    306 : "image/Valhalla-10.png",  //SONY_2K20_Valhalla
-    329 : "image/Uroboros3-10.png", //SONY_2K20_Uroboros3
-    144 : "image/Uroboros3-P.png", //Uroboros2-P
-    271 : "image/Uroboros3-P.png"  //Uroboros3-P
-}
+var cdidsList = [
+    { cdid: 306, image: "image/Valhalla-10.png", }, //SONY_2K20_Valhalla
+    { cdid: 329, image: "image/Uroboros3-10.png" }, //SONY_2K20_Uroboros3
+    { cdid: 144, image: "image/Uroboros3-P.png"  }, //Uroboros2-P
+    { cdid: 271, image: "image/Uroboros3-P.png"  }, //Uroboros3-P
+]
 
 var preProcessGroupData = function p(groupList) {
-    var groupDict = {}
     groupList.forEach(function(group) {
         var now = new Date()
         var testSuiteDict = group.test_suite_list.reduce((dict, suite) => {
             dict[suite.test_suite_id] = suite.test_suite
             return dict
         }, {})
-        group.cdid_image = cdids[group.group_id]
+        group.cdid_image = cdidsList.find(entry=>{
+            return entry.cdid === group.group_id
+        })
         group.estM = group.estimate_time % 60
         group.estH = (group.estimate_time - group.estM) / 60
         group.dStat = {'BUSY':0,'IDLE':0,'ABNORMAL':0}
@@ -33,12 +34,6 @@ var preProcessGroupData = function p(groupList) {
                 testPc.status = ''
             }
         })
-        groupDict[group.group_id] = group
-    })
-    var index = 0
-    Object.keys(cdids).forEach(cdid=>{
-        if (cdid in groupDict)
-            groupList[index++] = groupDict[cdid]
     })
 }
 
@@ -71,7 +66,7 @@ var app = new Vue({
         this.$vuetify.theme.dark = true
         var refreshAutoTestInfo = function f() {
             var groupsList = []
-            Promise.all(Object.keys(cdids).map(cdid => 
+            Promise.all(cdidsList.map(cdid => 
                 fetch(`./AutoTestData${cdid}.json`)
             )).then(responses =>
                 Promise.all(responses.map(response => response.json()))
