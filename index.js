@@ -1,6 +1,6 @@
 var cdidsList = [
-    { cdid: 306, image: "image/Valhalla-10.png", }, //SONY_2K20_Valhalla
     { cdid: 329, image: "image/Uroboros3-10.png" }, //SONY_2K20_Uroboros3
+    { cdid: 306, image: "image/Valhalla-10.png", }, //SONY_2K20_Valhalla
     { cdid: 144, image: "image/Uroboros3-P.png"  }, //Uroboros2-P
     { cdid: 271, image: "image/Uroboros3-P.png"  }, //Uroboros3-P
 ]
@@ -13,7 +13,7 @@ var preProcessGroupData = function p(groupList) {
             return dict
         }, {})
         group.cdid_image = cdidsList.find(entry=>{
-            return entry.cdid === group.group_id
+            return entry.cdid == group.group_id
         })
         group.estM = group.estimate_time % 60
         group.estH = (group.estimate_time - group.estM) / 60
