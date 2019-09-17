@@ -8,7 +8,7 @@ var cdidsList = [
 var preProcessGroupData = function p(groupList) {
     groupList.forEach(group => {
         var now = new Date()
-        var testSuiteDict = group.test_suite_list.reduce((dict, suite) => {
+        var testSuiteDict = group.test_suite_list_hb.reduce((dict, suite) => {
             dict[suite.test_suite_id] = suite.test_suite
             return dict
         }, {})
@@ -111,11 +111,13 @@ var app = new Vue({
         getTestStatus (testPc) {
             var statusList = []
             if (testPc.main_clno)
-                statusList.push(`${testPc.test_suite_id}: (${testPc.main_clno})`)
+                statusList.push(`<font class="blink">${testPc.test_suite_id}: (${testPc.main_clno})</font>`)
             if (testPc.fail_count)
                 statusList.push(`Continue Fails: ${testPc.fail_count}`)
             if (testPc.status)
                 statusList.push(`<font class="red blink">${testPc.status}</font>`)
+            if (statusList.length === 0)
+                statusList.push(`Update: ${testPc.update_time}`)
             return statusList.join('<br/>')
         },
         getPassRateColor (passRate) {
