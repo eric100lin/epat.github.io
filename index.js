@@ -8,11 +8,11 @@ var cdidsList = [
 var preProcessGroupData = function p(groupList) {
     groupList.forEach(group => {
         var now = new Date()
-        var testSuiteDict = group.test_suite_list.reduce((dict, suite) => {
+        var testSuiteDict = group.test_suite_list_hb.reduce((dict, suite) => {
             dict[suite.test_suite_id] = suite.test_suite
             return dict
         }, {})
-        group.test_suite_list_hb.reduce((dict, suite) => {
+        group.test_suite_list.reduce((dict, suite) => {
             dict[suite.test_suite_id] = suite.test_suite
             return dict
         }, testSuiteDict)
