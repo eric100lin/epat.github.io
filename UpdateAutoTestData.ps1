@@ -21,7 +21,7 @@ $pword = ConvertTo-SecureString -String "mediatek" -AsPlainText -Force
 $cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $user, $pword
 $url = "http://ep.mediatek.inc/Monitor/getAutoTestData"
 $cdids = @(306, 329, 144, 271)
-$outputFileFormat = 'AutoTestData$cdid.json'
+$outputFileFormat = 'data\AutoTestData$cdid.json'
 #For Testing
 #$url = "https://eric100lin.github.io/AutoTestData.json"
 #$output = "AutoDownloadData.json"
