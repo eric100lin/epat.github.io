@@ -59,8 +59,9 @@
                                         </v-list-item-content>
                                     </v-list-item>
                                     <v-data-table
+                                        v-if="group.test_suite_list.length!==0"
                                         :headers="test_suite_headers"
-                                        :items="group.test_suite_list_hb"
+                                        :items="group.test_suite_list"
                                         hide-default-footer
                                         class="elevation-1" dense
                                     >
