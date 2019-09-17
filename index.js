@@ -65,7 +65,16 @@ var app = new Vue({
     },
     created () {
         this.$vuetify.theme.dark = true
-        var refreshAutoTestInfo = function f() {
+        this.refreshAutoTestInfo()
+    },
+    mounted () {
+        this.startTimerInterval()
+    },
+    beforeDestroy () {
+        this.clearTimerInterval()
+    },
+    methods: {
+        refreshAutoTestInfo() {
             var groupsList = []
             Promise.all(cdidsList.map(entry => 
                 fetch(`./AutoTestData${entry.cdid}.json`)
@@ -77,11 +86,7 @@ var app = new Vue({
                 preProcessGroupData(groupsList)
                 app.groups = groupsList
             })
-        }
-        refreshAutoTestInfo()
-        setInterval(refreshAutoTestInfo, 120000);
-    },
-    methods: {
+        },
         getJobTypeIcon (jobType) {
             //Google Material Design Icons
             //https://material.io/resources/icons/?style=baseline
@@ -125,6 +130,12 @@ var app = new Vue({
             if (queueSize > 8)
                 return 'red'
             return ''
+        },
+        startTimerInterval () {
+            this.refereshInterval = setInterval(this.refreshAutoTestInfo, 120000)
+        },
+        clearTimerInterval () {
+            clearInterval(this.refereshInterval)
         }
     },
 })
