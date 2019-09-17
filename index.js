@@ -6,6 +6,7 @@ var cdids = {
 }
 
 var preProcessGroupData = function p(groupList) {
+    var groupDict = {}
     groupList.forEach(function(group) {
         var now = new Date()
         var testSuiteDict = group.test_suite_list.reduce((dict, suite) => {
@@ -32,6 +33,12 @@ var preProcessGroupData = function p(groupList) {
                 testPc.status = ''
             }
         })
+        groupDict[group.group_id] = group
+    })
+    var index = 0
+    Object.keys(cdids).forEach(cdid=>{
+        if (cdid in groupDict)
+            groupList[index++] = groupDict[cdid]
     })
 }
 
