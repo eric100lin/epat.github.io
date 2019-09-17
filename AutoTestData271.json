@@ -20,11 +20,11 @@
       "host_name": "ATHQA036D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-16 22:44:54",
+      "update_time": "2019-09-17 12:22:46",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
-      "fail_count": 126,
+      "fail_count": 127,
       "capability": [
         "5"
       ]
