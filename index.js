@@ -62,6 +62,7 @@ var app = new Vue({
         ]
         return {
             pgbValue: 0,
+            refreshDisabled: true,
             test_suite_headers: test_suite_headers,
             test_pc_headers: test_pc_headers,
             groups: [],
@@ -70,6 +71,7 @@ var app = new Vue({
     created () {
         this.$vuetify.theme.dark = true
         this.refreshAutoTestInfo()
+        this.refreshDisabled = false
     },
     mounted () {
         this.startTimerInterval()
@@ -163,6 +165,14 @@ var app = new Vue({
         clearTimerInterval () {
             clearInterval(this.pgbInterval)
             clearInterval(this.refereshInterval)
+        },
+        refreshImmediately () {
+            this.refreshDisabled = true
+            this.clearTimerInterval()
+            this.pgbValue = 0
+            this.refreshAutoTestInfo()
+            this.startTimerInterval()
+            this.refreshDisabled = false
         }
     },
 })
