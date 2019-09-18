@@ -1,4 +1,6 @@
-var cdidsList = [
+//const refereshTime = 2 * 60 * 1000                     //2 mins(= 120,000‬ ms)
+const refereshTime = 30 * 1000                           //30 secs(= 30,000‬ ms), for debugging
+const cdidsList = [
     { cdid: 329, image: "images/Uroboros3-10.png" }, //SONY_2K20_Uroboros3
     { cdid: 306, image: "images/Valhalla-10.png", }, //SONY_2K20_Valhalla
     { cdid: 144, image: "images/Uroboros3-P.png"  }, //Uroboros2-P
@@ -93,9 +95,12 @@ var app = new Vue({
             ).then(jsons => {
                 Promise.all(jsons.map(json => groupsList.push(json)))
             }).then(() => {
+                console.log(`Update from Promise!`)
                 preProcessGroupData(groupsList)
                 this.groups.splice(0, this.groups.length)
                 Array.prototype.push.apply(this.groups, groupsList)
+                console.log(`groupsList: ${groupsList[0].test_pc_list[1].update_time}`)
+                console.log(`this.groups: ${this.groups[0].test_pc_list[1].update_time}`)
             })
         },
         getJobTypeIcon (jobType) {
@@ -147,9 +152,9 @@ var app = new Vue({
         startTimerInterval () {
             this.clearTimerInterval()
 
-            this.refereshInterval = setInterval(this.refreshAutoTestInfo, 120000)
+            this.refereshInterval = setInterval(this.refreshAutoTestInfo, refereshTime)
             this.pgbInterval = setInterval(() => {
-                this.pgbValue += 0.83
+                this.pgbValue += (100/(refereshTime/1000))
             }, 1000)
         },
         clearTimerInterval () {
