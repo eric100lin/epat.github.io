@@ -89,7 +89,14 @@ var app = new Vue({
         refreshAutoTestInfo () {
             var groupsList = []
             Promise.all(cdidsList.map(entry => 
-                fetch(`./data/AutoTestData${entry.cdid}.json`)
+                fetch(`./data/AutoTestData${entry.cdid}.json`, {
+                    /*
+                    * no-cache — The browser looks for a matching request in its HTTP cache
+                    * If there is a match, fresh or stale, the browser will make a conditional request to the remote server. 
+                    * If there is no match, the browser will make a normal request, and will update the cache with the downloaded resource.
+                    */
+                    cache: 'no-cache'
+                })
             )).then(responses =>
                 Promise.all(responses.map(response => response.json()))
             ).then(jsons => {
