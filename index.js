@@ -94,8 +94,8 @@ var app = new Vue({
                 Promise.all(jsons.map(json => groupsList.push(json)))
             }).then(() => {
                 preProcessGroupData(groupsList)
-                app.groups.splice(0, app.groups.length)
-                Array.prototype.push.apply(app.groups, groupsList)
+                Array.prototype.splice(0, this.groups.length)
+                Array.prototype.push.apply(this.groups, groupsList)
             })
         },
         getJobTypeIcon (jobType) {
