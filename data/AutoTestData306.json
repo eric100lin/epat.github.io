@@ -46,10 +46,10 @@
       "host_name": "ATHQA038A",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2019-09-18 20:32:29",
+      "update_time": "2019-09-18 20:34:44",
       "job_type": "HB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "20190918175848",
       "fail_count": 58,
       "capability": [
         "50",
