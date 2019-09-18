@@ -94,7 +94,7 @@ var app = new Vue({
                 Promise.all(jsons.map(json => groupsList.push(json)))
             }).then(() => {
                 preProcessGroupData(groupsList)
-                Array.prototype.splice(0, this.groups.length)
+                this.groups.splice(0, this.groups.length)
                 Array.prototype.push.apply(this.groups, groupsList)
             })
         },
