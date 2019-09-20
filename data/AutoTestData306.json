@@ -32,11 +32,11 @@
     {
       "host_name": "ATHQA037D",
       "device": "2",
-      "status": "IDLE",
-      "update_time": "2019-09-20 18:46:06",
+      "status": "BUSY",
+      "update_time": "2019-09-20 18:47:40",
       "job_type": "HB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "20190920142819",
       "fail_count": 0,
       "capability": [
         "20"
