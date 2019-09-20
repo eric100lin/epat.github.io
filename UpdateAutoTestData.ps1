@@ -47,7 +47,10 @@ While($true)
     Write-Host "Update $outputFileFormat($cdids) at $start_time"
     git add --all
     git commit -m "Update $outputFileFormat($cdids) at $start_time"
-    git push origin master
+    Write-Host "Push to remote git repository with 5 seconds timeout"
+    $pObj = Start-Process -FilePath "git" -ArgumentList "push","origin","master" -NoNewWindow -PassThru
+    Wait-Process -InputObject $pObj -Timeout 5
+    Stop-Process -InputObject $pObj
     #For Testing
     #git status
 
