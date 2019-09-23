@@ -20,11 +20,11 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "BUSY",
-      "update_time": "2019-09-24 01:29:51",
+      "update_time": "2019-09-24 01:52:41",
       "job_type": "HB",
-      "test_suite_id": "5",
-      "main_clno": "20190923232530",
-      "fail_count": 1,
+      "test_suite_id": "20",
+      "main_clno": "20190923214026",
+      "fail_count": 0,
       "capability": [
         "20",
         "5"
