@@ -19,8 +19,8 @@
     {
       "host_name": "ATHQA036D",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-09-24 15:00:25",
+      "status": "BUSY",
+      "update_time": "2019-09-24 15:00:51",
       "job_type": "HB",
       "test_suite_id": "5",
       "main_clno": "20190924114010",
