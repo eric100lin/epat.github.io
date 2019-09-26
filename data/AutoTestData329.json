@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-26 19:46:32",
+      "update_time": "2019-09-26 19:49:07",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-26 19:46:40",
+      "update_time": "2019-09-26 19:48:44",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-26 19:46:45",
+      "update_time": "2019-09-26 19:48:52",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -86,11 +86,11 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-09-26 19:46:33",
+      "status": "BUSY",
+      "update_time": "2019-09-26 19:48:38",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-234887",
       "fail_count": 0,
       "capability": [
         "5"
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-26 19:46:47",
+      "update_time": "2019-09-26 19:48:52",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-26 19:46:31",
+      "update_time": "2019-09-26 19:49:06",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 20
 }
