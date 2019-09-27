@@ -12,7 +12,7 @@
       "test_suite": "Video_Verify",
       "test_suite_id": "5",
       "job_type": "PB",
-      "queue": "0",
+      "queue": 1,
       "tree_day_avg": "20",
       "last_week_avg": "20",
       "pass_rate": "100",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 20
+  "estimate_time": 40
 }
