@@ -15,11 +15,11 @@
       "queue": "0",
       "tree_day_avg": "21",
       "last_week_avg": "20",
-      "pass_rate": "64",
-      "pass_rate_summary": "(9/14)",
+      "pass_rate": "67",
+      "pass_rate_summary": "(10/15)",
       "top10_pass_rate": "50",
-      "top20_pass_rate": "64",
-      "top30_pass_rate": "64"
+      "top20_pass_rate": "67",
+      "top30_pass_rate": "67"
     }
   ],
   "test_suite_list_hb": [
@@ -60,11 +60,11 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-09-27 20:10:46",
+      "status": "IDLE",
+      "update_time": "2019-09-27 20:29:56",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-235060",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-27 20:27:53",
+      "update_time": "2019-09-27 20:30:01",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-27 20:27:36",
+      "update_time": "2019-09-27 20:30:11",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-27 20:27:47",
+      "update_time": "2019-09-27 20:29:51",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-09-27 20:27:33",
+      "update_time": "2019-09-27 20:30:07",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 3
+  "estimate_time": 0
 }
