@@ -4,7 +4,7 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "ivan-th.chen",
-  "max_queue_time": 12,
+  "max_queue_time": 15,
   "max_queue_pb_id": "PB-235080",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "BUSY",
-      "update_time": "2019-09-27 12:44:59",
+      "update_time": "2019-09-27 13:32:33",
       "job_type": "HB",
       "test_suite_id": "5",
       "main_clno": "20190927105326",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 12:41:20",
+      "update_time": "2019-09-27 13:32:31",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235060",
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 11:11:58",
+      "update_time": "2019-09-27 13:34:03",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235017",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 11:09:03",
+      "update_time": "2019-09-27 13:32:38",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235014",
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 11:16:57",
+      "update_time": "2019-09-27 13:32:31",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235020",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 13:25:21",
+      "update_time": "2019-09-27 13:32:22",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235054",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 11:07:46",
+      "update_time": "2019-09-27 13:34:00",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235006",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 34
+  "estimate_time": 38
 }
