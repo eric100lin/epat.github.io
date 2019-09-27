@@ -4,7 +4,7 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "ivan-th.chen",
-  "max_queue_time": 5,
+  "max_queue_time": 7,
   "max_queue_pb_id": "PB-235080",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2019-09-27 12:41:56",
+      "update_time": "2019-09-27 13:25:21",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-235054",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 40
+  "estimate_time": 39
 }
