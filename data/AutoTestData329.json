@@ -12,7 +12,7 @@
       "test_suite": "Video_Verify",
       "test_suite_id": "5",
       "job_type": "PB",
-      "queue": 1,
+      "queue": "0",
       "tree_day_avg": "20",
       "last_week_avg": "20",
       "pass_rate": "100",
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-09-27 12:40:20",
+      "update_time": "2019-09-27 12:42:54",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -47,11 +47,11 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-09-27 12:40:18",
+      "status": "BUSY",
+      "update_time": "2019-09-27 12:41:20",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-235060",
       "fail_count": 0,
       "capability": [
         "5"
@@ -99,11 +99,11 @@
     {
       "host_name": "ATHQA038C",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-09-27 12:40:21",
+      "status": "BUSY",
+      "update_time": "2019-09-27 12:41:56",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-235054",
       "fail_count": 0,
       "capability": [
         "5"
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 40
+  "estimate_time": 20
 }
