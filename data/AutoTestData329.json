@@ -14,7 +14,7 @@
       "job_type": "PB",
       "queue": "0",
       "tree_day_avg": "79",
-      "last_week_avg": "67",
+      "last_week_avg": "68",
       "pass_rate": "88",
       "pass_rate_summary": "(7/8)",
       "top10_pass_rate": "88",
@@ -33,11 +33,11 @@
     {
       "host_name": "ATHQA034C",
       "device": "3",
-      "status": "IDLE",
-      "update_time": "2019-10-12 18:19:56",
+      "status": "BUSY",
+      "update_time": "2019-10-12 18:22:31",
       "job_type": "HB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "20191012154216",
       "fail_count": 23,
       "capability": [
         "20",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-12 18:20:06",
+      "update_time": "2019-10-12 18:22:09",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-12 18:19:55",
+      "update_time": "2019-10-12 18:22:32",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-12 18:20:00",
+      "update_time": "2019-10-12 18:22:35",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-12 18:20:21",
+      "update_time": "2019-10-12 18:22:25",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-12 18:20:23",
+      "update_time": "2019-10-12 18:22:26",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 40
+  "estimate_time": 38
 }
