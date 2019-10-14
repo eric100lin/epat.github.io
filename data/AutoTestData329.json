@@ -5,7 +5,7 @@
   "sub_category": "Sony",
   "pm": "ivan-th.chen",
   "max_queue_time": 7,
-  "max_queue_pb_id": "PB-238470",
+  "max_queue_pb_id": "PB-238556",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -59,7 +59,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 18:01:08",
+      "update_time": "2019-10-14 18:03:12",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -72,7 +72,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 18:01:25",
+      "update_time": "2019-10-14 18:03:31",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -98,7 +98,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 18:01:20",
+      "update_time": "2019-10-14 18:03:25",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -111,7 +111,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 18:00:57",
+      "update_time": "2019-10-14 18:03:32",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -121,5 +121,5 @@
       ]
     }
   ],
-  "estimate_time": 49
+  "estimate_time": 47
 }
