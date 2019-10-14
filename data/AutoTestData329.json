@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "ivan-th.chen",
-  "max_queue_time": 4,
-  "max_queue_pb_id": "PB-238462",
+  "max_queue_time": 7,
+  "max_queue_pb_id": "PB-238470",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -13,10 +13,10 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "75",
+      "tree_day_avg": "73",
       "last_week_avg": "76",
       "pass_rate": "100",
-      "pass_rate_summary": "(2/2)",
+      "pass_rate_summary": "(3/3)",
       "top10_pass_rate": "100",
       "top20_pass_rate": "100",
       "top30_pass_rate": "100"
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 13:29:24",
+      "update_time": "2019-10-14 13:31:58",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,8 +60,21 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
+      "status": "BUSY",
+      "update_time": "2019-10-14 13:31:03",
+      "job_type": "PB",
+      "test_suite_id": "5",
+      "main_clno": "PB-238458",
+      "fail_count": 0,
+      "capability": [
+        "5"
+      ]
+    },
+    {
+      "host_name": "ATHQA037B",
+      "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 13:29:28",
+      "update_time": "2019-10-14 13:31:57",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -71,23 +84,10 @@
       ]
     },
     {
-      "host_name": "ATHQA037B",
-      "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-10-14 12:39:02",
-      "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-238470",
-      "fail_count": 0,
-      "capability": [
-        "5"
-      ]
-    },
-    {
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 13:29:49",
+      "update_time": "2019-10-14 13:31:52",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 13:29:25",
+      "update_time": "2019-10-14 13:32:01",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-10-14 13:29:24",
+      "update_time": "2019-10-14 13:31:58",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 24
+  "estimate_time": 71
 }
