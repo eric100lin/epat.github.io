@@ -20,7 +20,7 @@
       "host_name": "ATHQA036A",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2019-10-18 02:06:53",
+      "update_time": "2019-10-18 02:08:55",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -32,11 +32,11 @@
     {
       "host_name": "ATHQA037D",
       "device": "2",
-      "status": "IDLE",
-      "update_time": "2019-10-18 02:06:37",
+      "status": "BUSY",
+      "update_time": "2019-10-18 02:07:41",
       "job_type": "HB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "20191017210710",
       "fail_count": 12,
       "capability": [
         "20"
@@ -46,7 +46,7 @@
       "host_name": "ATHQA038A",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2019-10-18 02:06:51",
+      "update_time": "2019-10-18 02:08:54",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
