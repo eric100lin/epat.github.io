@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-11-01 13:11:57",
+      "update_time": "2019-11-01 13:14:35",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-01 13:11:53",
+      "update_time": "2019-11-01 13:14:31",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-01 13:11:47",
+      "update_time": "2019-11-01 13:14:26",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-01 13:11:52",
+      "update_time": "2019-11-01 13:14:31",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -86,11 +86,11 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-11-01 13:11:54",
+      "status": "BUSY",
+      "update_time": "2019-11-01 13:13:01",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-244391",
       "fail_count": 0,
       "capability": [
         "5"
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-01 13:11:45",
+      "update_time": "2019-11-01 13:14:25",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-01 13:11:50",
+      "update_time": "2019-11-01 13:14:27",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 83
 }
