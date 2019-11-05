@@ -13,7 +13,7 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "80",
+      "tree_day_avg": "84",
       "last_week_avg": "81",
       "pass_rate": "56",
       "pass_rate_summary": "(5/9)",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-05 13:17:55",
+      "update_time": "2019-11-05 13:20:30",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -61,10 +61,10 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-05 13:18:16",
+      "update_time": "2019-11-05 13:20:32",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-244984",
       "fail_count": 2,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-05 13:18:18",
+      "update_time": "2019-11-05 13:20:23",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-05 13:17:55",
+      "update_time": "2019-11-05 13:20:31",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-05 13:18:03",
+      "update_time": "2019-11-05 13:20:38",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-05 13:17:53",
+      "update_time": "2019-11-05 13:20:27",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 84
 }
