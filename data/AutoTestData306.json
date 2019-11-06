@@ -45,12 +45,12 @@
     {
       "host_name": "ATHQA038A",
       "device": "2",
-      "status": "BUSY",
-      "update_time": "2019-11-07 01:33:08",
+      "status": "IDLE",
+      "update_time": "2019-11-07 02:07:19",
       "job_type": "HB",
-      "test_suite_id": "20",
-      "main_clno": "20191106220942",
-      "fail_count": 145,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 146,
       "capability": [
         "50",
         "53",
