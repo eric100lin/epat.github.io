@@ -12,7 +12,7 @@
       "test_suite": "Video_Verify",
       "test_suite_id": "5",
       "job_type": "PB",
-      "queue": 1,
+      "queue": "0",
       "tree_day_avg": "92",
       "last_week_avg": "83",
       "pass_rate": "75",
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-11-07 17:37:34",
+      "update_time": "2019-11-07 17:39:37",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-07 17:37:42",
+      "update_time": "2019-11-07 17:39:46",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,11 +60,11 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-11-07 17:37:30",
+      "status": "BUSY",
+      "update_time": "2019-11-07 17:39:11",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-246228",
       "fail_count": 0,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-07 17:37:33",
+      "update_time": "2019-11-07 17:39:38",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-07 17:37:34",
+      "update_time": "2019-11-07 17:39:38",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-07 17:37:37",
+      "update_time": "2019-11-07 17:39:40",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 118
+  "estimate_time": 90
 }
