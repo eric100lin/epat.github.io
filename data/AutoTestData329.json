@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "ivan-th.chen",
-  "max_queue_time": 1,
-  "max_queue_pb_id": "PB-252653",
+  "max_queue_time": 3,
+  "max_queue_pb_id": "PB-252869",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -13,10 +13,10 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "108",
+      "tree_day_avg": "90",
       "last_week_avg": "53",
       "pass_rate": "0",
-      "pass_rate_summary": "(0/3)",
+      "pass_rate_summary": "(0/4)",
       "top10_pass_rate": "0",
       "top20_pass_rate": "0",
       "top30_pass_rate": "0"
@@ -47,12 +47,12 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-11-25 18:30:44",
+      "status": "IDLE",
+      "update_time": "2019-11-25 18:52:35",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-252869",
-      "fail_count": 4,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 5,
       "capability": [
         "5"
       ]
@@ -60,11 +60,11 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-11-25 18:50:01",
+      "status": "BUSY",
+      "update_time": "2019-11-25 18:52:38",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-252909",
       "fail_count": 6,
       "capability": [
         "5"
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-25 18:49:59",
+      "update_time": "2019-11-25 18:52:36",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-25 18:49:59",
+      "update_time": "2019-11-25 18:52:33",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 93
+  "estimate_time": 90
 }
