@@ -13,7 +13,7 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "58",
+      "tree_day_avg": "60",
       "last_week_avg": "52",
       "pass_rate": "0",
       "pass_rate_summary": "(0/14)",
@@ -33,12 +33,12 @@
     {
       "host_name": "ATHQA034C",
       "device": "3",
-      "status": "BUSY",
-      "update_time": "2019-11-26 16:16:11",
+      "status": "IDLE",
+      "update_time": "2019-11-26 18:02:04",
       "job_type": "HB",
-      "test_suite_id": "5",
-      "main_clno": "20191126092239",
-      "fail_count": 121,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 122,
       "capability": [
         "20",
         "5"
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-26 17:59:44",
+      "update_time": "2019-11-26 18:02:19",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-26 17:59:31",
+      "update_time": "2019-11-26 18:02:07",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-26 17:59:34",
+      "update_time": "2019-11-26 18:02:12",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-26 17:59:32",
+      "update_time": "2019-11-26 18:02:09",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-26 17:59:27",
+      "update_time": "2019-11-26 18:02:02",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 42
+  "estimate_time": 41
 }
