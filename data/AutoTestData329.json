@@ -15,11 +15,11 @@
       "queue": "0",
       "tree_day_avg": "63",
       "last_week_avg": "57",
-      "pass_rate": "69",
-      "pass_rate_summary": "(11/16)",
-      "top10_pass_rate": "70",
-      "top20_pass_rate": "69",
-      "top30_pass_rate": "69"
+      "pass_rate": "71",
+      "pass_rate_summary": "(12/17)",
+      "top10_pass_rate": "80",
+      "top20_pass_rate": "71",
+      "top30_pass_rate": "71"
     }
   ],
   "test_suite_list_hb": [
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-11-29 12:22:26",
+      "update_time": "2019-11-29 12:24:28",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-29 12:22:01",
+      "update_time": "2019-11-29 12:24:36",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,11 +73,11 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-11-29 11:31:17",
+      "status": "IDLE",
+      "update_time": "2019-11-29 12:24:50",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-254635",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "5"
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-29 12:22:27",
+      "update_time": "2019-11-29 12:24:31",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-29 12:22:00",
+      "update_time": "2019-11-29 12:24:36",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-11-29 12:22:26",
+      "update_time": "2019-11-29 12:24:30",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 41
+  "estimate_time": 39
 }
