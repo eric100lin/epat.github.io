@@ -15,11 +15,11 @@
       "queue": "0",
       "tree_day_avg": "65",
       "last_week_avg": "66",
-      "pass_rate": "92",
-      "pass_rate_summary": "(11/12)",
+      "pass_rate": "91",
+      "pass_rate_summary": "(10/11)",
       "top10_pass_rate": "90",
-      "top20_pass_rate": "92",
-      "top30_pass_rate": "92"
+      "top20_pass_rate": "91",
+      "top30_pass_rate": "91"
     }
   ],
   "test_suite_list_hb": [
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2019-12-04 11:45:10",
+      "update_time": "2019-12-04 11:47:52",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 11:45:10",
+      "update_time": "2019-12-04 11:47:48",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 11:45:11",
+      "update_time": "2019-12-04 11:47:54",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 11:45:10",
+      "update_time": "2019-12-04 11:47:52",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 11:45:11",
+      "update_time": "2019-12-04 11:47:53",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 11:45:10",
+      "update_time": "2019-12-04 11:47:49",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 58
+  "estimate_time": 55
 }
