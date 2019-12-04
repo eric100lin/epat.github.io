@@ -5,7 +5,7 @@
   "sub_category": "Sony",
   "pm": "ivan-th.chen",
   "max_queue_time": 2,
-  "max_queue_pb_id": "PB-256523",
+  "max_queue_pb_id": "PB-256609",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 15:31:04",
+      "update_time": "2019-12-04 15:33:12",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,11 +60,11 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-12-04 15:30:52",
+      "status": "BUSY",
+      "update_time": "2019-12-04 15:33:31",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-256609",
       "fail_count": 0,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 15:30:49",
+      "update_time": "2019-12-04 15:33:26",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -87,7 +87,7 @@
       "host_name": "ATHQA037C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 15:30:40",
+      "update_time": "2019-12-04 15:33:16",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -100,7 +100,7 @@
       "host_name": "ATHQA038C",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 15:30:58",
+      "update_time": "2019-12-04 15:33:37",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -113,7 +113,7 @@
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-04 15:31:02",
+      "update_time": "2019-12-04 15:33:37",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -123,5 +123,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 64
 }
