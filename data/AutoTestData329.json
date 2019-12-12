@@ -13,13 +13,13 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "52",
+      "tree_day_avg": "54",
       "last_week_avg": "66",
-      "pass_rate": "32",
-      "pass_rate_summary": "(6/19)",
-      "top10_pass_rate": "60",
-      "top20_pass_rate": "32",
-      "top30_pass_rate": "32"
+      "pass_rate": "35",
+      "pass_rate_summary": "(7/20)",
+      "top10_pass_rate": "70",
+      "top20_pass_rate": "35",
+      "top30_pass_rate": "35"
     }
   ],
   "test_suite_list_hb": [
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-12 18:28:36",
+      "update_time": "2019-12-12 18:30:39",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -84,8 +84,21 @@
     {
       "host_name": "ATHQA037C",
       "device": "4",
+      "status": "BUSY",
+      "update_time": "2019-12-12 18:31:00",
+      "job_type": "PB",
+      "test_suite_id": "5",
+      "main_clno": "PB-259923",
+      "fail_count": 0,
+      "capability": [
+        "5"
+      ]
+    },
+    {
+      "host_name": "ATHQA038C",
+      "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-12 18:28:20",
+      "update_time": "2019-12-12 18:30:44",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -95,23 +108,10 @@
       ]
     },
     {
-      "host_name": "ATHQA038C",
-      "device": "4",
-      "status": "BUSY",
-      "update_time": "2019-12-12 16:37:52",
-      "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-259838",
-      "fail_count": 5,
-      "capability": [
-        "5"
-      ]
-    },
-    {
       "host_name": "ATHQA038D",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2019-12-12 18:28:22",
+      "update_time": "2019-12-12 18:30:56",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -121,5 +121,5 @@
       ]
     }
   ],
-  "estimate_time": 51
+  "estimate_time": 53
 }
