@@ -110,8 +110,8 @@
     {
       "host_name": "ATHQA038D",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2019-12-12 16:42:38",
+      "status": "BUSY",
+      "update_time": "2019-12-12 16:42:58",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-259725",
@@ -121,5 +121,5 @@
       ]
     }
   ],
-  "estimate_time": 69
+  "estimate_time": 49
 }
