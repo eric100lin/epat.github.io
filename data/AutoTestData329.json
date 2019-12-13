@@ -15,11 +15,11 @@
       "queue": "0",
       "tree_day_avg": "59",
       "last_week_avg": "65",
-      "pass_rate": "79",
-      "pass_rate_summary": "(11/14)",
+      "pass_rate": "77",
+      "pass_rate_summary": "(10/13)",
       "top10_pass_rate": "70",
-      "top20_pass_rate": "79",
-      "top30_pass_rate": "79"
+      "top20_pass_rate": "77",
+      "top30_pass_rate": "77"
     }
   ],
   "test_suite_list_hb": [
