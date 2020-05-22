@@ -12,14 +12,14 @@
       "test_suite": "Video_Verify",
       "test_suite_id": "5",
       "job_type": "PB",
-      "queue": 2,
+      "queue": 3,
       "tree_day_avg": "20",
       "last_week_avg": "39",
-      "pass_rate": "30",
-      "pass_rate_summary": "(18/61)",
+      "pass_rate": "31",
+      "pass_rate_summary": "(19/62)",
       "top10_pass_rate": "40",
       "top20_pass_rate": "40",
-      "top30_pass_rate": "37"
+      "top30_pass_rate": "40"
     }
   ],
   "test_suite_list_hb": [
@@ -47,11 +47,11 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-05-22 14:36:05",
+      "status": "IDLE",
+      "update_time": "2020-05-22 15:22:00",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-316820",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-05-22 15:20:06",
+      "update_time": "2020-05-22 15:22:10",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
