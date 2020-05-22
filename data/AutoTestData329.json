@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2020-05-22 18:42:59",
+      "update_time": "2020-05-22 18:45:22",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-316971",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 20
+  "estimate_time": 21
 }
