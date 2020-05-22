@@ -3,11 +3,25 @@
   "project_name": "SONY_2K20_Valhalla",
   "category": "AN",
   "sub_category": "Sony",
-  "pm": "jason.chen",
+  "pm": "jerry.fan",
   "max_queue_time": 0,
   "max_queue_pb_id": "",
   "max_queue_over_2_hours": 0,
-  "test_suite_list": [],
+  "test_suite_list": [
+    {
+      "test_suite": "Video_Silent",
+      "test_suite_id": "20",
+      "job_type": "PB",
+      "queue": "0",
+      "tree_day_avg": "9",
+      "last_week_avg": "19",
+      "pass_rate": "0",
+      "pass_rate_summary": "(0/21)",
+      "top10_pass_rate": "0",
+      "top20_pass_rate": "0",
+      "top30_pass_rate": "0"
+    }
+  ],
   "test_suite_list_hb": [
     {
       "test_suite": "Video_Silent",
@@ -17,27 +31,14 @@
   ],
   "test_pc_list": [
     {
-      "host_name": "ATHQA036A",
-      "device": "2",
-      "status": "IDLE",
-      "update_time": "2019-12-21 20:53:42",
-      "job_type": "HB",
-      "test_suite_id": "",
-      "main_clno": "",
-      "fail_count": 17,
-      "capability": [
-        "20"
-      ]
-    },
-    {
       "host_name": "ATHQA037D",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2019-12-21 20:53:34",
+      "update_time": "2020-05-22 09:50:40",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
-      "fail_count": 124,
+      "fail_count": 109,
       "capability": [
         "20"
       ]
@@ -46,20 +47,44 @@
       "host_name": "ATHQA038A",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2019-12-21 20:53:58",
+      "update_time": "2020-05-22 09:50:58",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
-      "fail_count": 227,
+      "fail_count": 0,
       "capability": [
         "50",
         "53",
         "55",
-        "5",
         "80",
         "82",
-        "83",
         "54",
+        "20"
+      ]
+    },
+    {
+      "host_name": "ATHQA038D",
+      "device": "4",
+      "status": "IDLE",
+      "update_time": "2020-05-22 09:50:31",
+      "job_type": "PB",
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 183,
+      "capability": [
+        "20"
+      ]
+    },
+    {
+      "host_name": "ATHQA042A",
+      "device": "2",
+      "status": "BUSY",
+      "update_time": "2020-05-22 09:06:36",
+      "job_type": "HB,ST",
+      "test_suite_id": "20",
+      "main_clno": "ST20200521224842",
+      "fail_count": 0,
+      "capability": [
         "20"
       ]
     }
