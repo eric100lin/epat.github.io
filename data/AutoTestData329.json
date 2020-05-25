@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "BUSY",
-      "update_time": "2020-05-25 15:20:36",
+      "update_time": "2020-05-25 15:21:39",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-317633",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-05-25 15:21:19",
+      "update_time": "2020-05-25 15:23:24",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 28
+  "estimate_time": 27
 }
