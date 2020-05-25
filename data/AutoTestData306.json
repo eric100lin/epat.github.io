@@ -34,7 +34,7 @@
       "host_name": "ATHQA037D",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2020-05-25 20:33:17",
+      "update_time": "2020-05-25 20:35:23",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -47,7 +47,7 @@
       "host_name": "ATHQA038A",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2020-05-25 20:33:21",
+      "update_time": "2020-05-25 20:35:25",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -65,11 +65,11 @@
     {
       "host_name": "ATHQA038D",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2020-05-25 20:33:09",
+      "status": "BUSY",
+      "update_time": "2020-05-25 20:35:14",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "20",
+      "main_clno": "PB-317847",
       "fail_count": 216,
       "capability": [
         "20"
@@ -79,7 +79,7 @@
       "host_name": "ATHQA042A",
       "device": "2",
       "status": "IDLE",
-      "update_time": "2020-05-25 20:33:14",
+      "update_time": "2020-05-25 20:35:48",
       "job_type": "HB,ST",
       "test_suite_id": "",
       "main_clno": "",
@@ -89,5 +89,5 @@
       ]
     }
   ],
-  "estimate_time": 0
+  "estimate_time": 30
 }
