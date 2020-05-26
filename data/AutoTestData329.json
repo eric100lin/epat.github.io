@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jerry.fan",
-  "max_queue_time": 7,
-  "max_queue_pb_id": "PB-318193",
+  "max_queue_time": 5,
+  "max_queue_pb_id": "PB-318126",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -47,8 +47,8 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2020-05-26 13:11:47",
+      "status": "BUSY",
+      "update_time": "2020-05-26 13:12:06",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-318193",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-05-26 13:11:28",
+      "update_time": "2020-05-26 13:13:34",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 53
+  "estimate_time": 31
 }
