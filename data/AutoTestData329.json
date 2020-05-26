@@ -13,13 +13,13 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "33",
+      "tree_day_avg": "32",
       "last_week_avg": "24",
-      "pass_rate": "41",
-      "pass_rate_summary": "(12/29)",
+      "pass_rate": "40",
+      "pass_rate_summary": "(12/30)",
       "top10_pass_rate": "40",
       "top20_pass_rate": "45",
-      "top30_pass_rate": "41"
+      "top30_pass_rate": "40"
     }
   ],
   "test_suite_list_hb": [
@@ -73,16 +73,16 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-05-26 13:48:11",
+      "status": "IDLE",
+      "update_time": "2020-05-26 13:53:29",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-318229",
-      "fail_count": 104,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 105,
       "capability": [
         "5"
       ]
     }
   ],
-  "estimate_time": 30
+  "estimate_time": 26
 }
