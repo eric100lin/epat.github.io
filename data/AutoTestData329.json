@@ -12,7 +12,7 @@
       "test_suite": "Video_Verify",
       "test_suite_id": "5",
       "job_type": "PB",
-      "queue": 1,
+      "queue": "0",
       "tree_day_avg": "30",
       "last_week_avg": "23",
       "pass_rate": "38",
@@ -47,11 +47,11 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2020-05-27 22:33:20",
+      "status": "BUSY",
+      "update_time": "2020-05-27 22:34:06",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-319069",
       "fail_count": 0,
       "capability": [
         "5"
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-05-27 22:33:23",
+      "update_time": "2020-05-27 22:35:26",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-05-27 22:33:20",
+      "update_time": "2020-05-27 22:35:24",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 30
+  "estimate_time": 29
 }
