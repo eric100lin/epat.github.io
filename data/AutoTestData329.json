@@ -15,10 +15,10 @@
       "queue": 2,
       "tree_day_avg": "30",
       "last_week_avg": "24",
-      "pass_rate": "47",
-      "pass_rate_summary": "(24/51)",
-      "top10_pass_rate": "70",
-      "top20_pass_rate": "55",
+      "pass_rate": "46",
+      "pass_rate_summary": "(24/52)",
+      "top10_pass_rate": "60",
+      "top20_pass_rate": "50",
       "top30_pass_rate": "53"
     }
   ],
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2020-05-28 19:25:14",
+      "update_time": "2020-05-28 19:27:18",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,16 +73,16 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-05-28 19:25:06",
+      "status": "IDLE",
+      "update_time": "2020-05-28 19:27:19",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-319847",
-      "fail_count": 147,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 148,
       "capability": [
         "5"
       ]
     }
   ],
-  "estimate_time": 50
+  "estimate_time": 43
 }
