@@ -73,16 +73,16 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2020-06-01 19:14:31",
+      "status": "BUSY",
+      "update_time": "2020-06-01 19:16:41",
       "job_type": "PB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "PB-321281",
       "fail_count": 190,
       "capability": [
         "5"
       ]
     }
   ],
-  "estimate_time": 28
+  "estimate_time": 32
 }
