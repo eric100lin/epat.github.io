@@ -12,7 +12,7 @@
       "test_suite": "Video_Verify",
       "test_suite_id": "5",
       "job_type": "PB",
-      "queue": "0",
+      "queue": 1,
       "tree_day_avg": "31",
       "last_week_avg": "29",
       "pass_rate": "41",
@@ -33,8 +33,8 @@
     {
       "host_name": "ATHQA034C",
       "device": "3",
-      "status": "IDLE",
-      "update_time": "2020-06-02 14:09:48",
+      "status": "BUSY",
+      "update_time": "2020-06-02 14:11:14",
       "job_type": "HB",
       "test_suite_id": "20",
       "main_clno": "20200602102857",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 25
+  "estimate_time": 45
 }
