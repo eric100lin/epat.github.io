@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-03 20:53:38",
+      "update_time": "2020-06-03 20:55:42",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,8 +60,8 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2020-06-03 20:53:44",
+      "status": "BUSY",
+      "update_time": "2020-06-03 20:54:21",
       "job_type": "PB",
       "test_suite_id": "5",
       "main_clno": "PB-322674",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-03 20:53:22",
+      "update_time": "2020-06-03 20:55:59",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 28
+  "estimate_time": 26
 }
