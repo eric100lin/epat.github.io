@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jerry.fan",
-  "max_queue_time": 20,
-  "max_queue_pb_id": "PB-322826",
+  "max_queue_time": 28,
+  "max_queue_pb_id": "PB-322829",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -13,13 +13,13 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "29",
+      "tree_day_avg": "30",
       "last_week_avg": "31",
-      "pass_rate": "45",
-      "pass_rate_summary": "(9/20)",
-      "top10_pass_rate": "50",
-      "top20_pass_rate": "45",
-      "top30_pass_rate": "45"
+      "pass_rate": "48",
+      "pass_rate_summary": "(10/21)",
+      "top10_pass_rate": "60",
+      "top20_pass_rate": "50",
+      "top30_pass_rate": "48"
     }
   ],
   "test_suite_list_hb": [
@@ -33,11 +33,11 @@
     {
       "host_name": "ATHQA034C",
       "device": "3",
-      "status": "BUSY",
-      "update_time": "2020-06-04 10:47:23",
+      "status": "IDLE",
+      "update_time": "2020-06-04 12:22:05",
       "job_type": "HB",
-      "test_suite_id": "5",
-      "main_clno": "20200604035333",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "20",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-04 12:19:50",
+      "update_time": "2020-06-04 12:21:53",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -60,11 +60,11 @@
     {
       "host_name": "ATHQA037A",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-06-04 11:27:22",
+      "status": "IDLE",
+      "update_time": "2020-06-04 12:21:59",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-322829",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-04 12:19:37",
+      "update_time": "2020-06-04 12:22:14",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -84,5 +84,5 @@
       ]
     }
   ],
-  "estimate_time": 20
+  "estimate_time": 0
 }
