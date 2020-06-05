@@ -4,7 +4,7 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jerry.fan",
-  "max_queue_time": 35,
+  "max_queue_time": 37,
   "max_queue_pb_id": "PB-323500",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
@@ -15,11 +15,11 @@
       "queue": 3,
       "tree_day_avg": "29",
       "last_week_avg": "30",
-      "pass_rate": "37",
-      "pass_rate_summary": "(14/38)",
-      "top10_pass_rate": "20",
-      "top20_pass_rate": "35",
-      "top30_pass_rate": "40"
+      "pass_rate": "38",
+      "pass_rate_summary": "(15/39)",
+      "top10_pass_rate": "30",
+      "top20_pass_rate": "40",
+      "top30_pass_rate": "43"
     }
   ],
   "test_suite_list_hb": [
@@ -47,11 +47,11 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-06-05 11:09:33",
+      "status": "IDLE",
+      "update_time": "2020-06-05 11:55:32",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-323502",
+      "test_suite_id": "",
+      "main_clno": "",
       "fail_count": 0,
       "capability": [
         "5"
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-05 11:53:23",
+      "update_time": "2020-06-05 11:55:27",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
