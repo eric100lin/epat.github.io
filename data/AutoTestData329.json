@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jerry.fan",
-  "max_queue_time": 3,
-  "max_queue_pb_id": "PB-324237",
+  "max_queue_time": 4,
+  "max_queue_pb_id": "PB-324365",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -13,13 +13,13 @@
       "test_suite_id": "5",
       "job_type": "PB",
       "queue": "0",
-      "tree_day_avg": "38",
+      "tree_day_avg": "36",
       "last_week_avg": "31",
-      "pass_rate": "50",
-      "pass_rate_summary": "(2/4)",
-      "top10_pass_rate": "50",
-      "top20_pass_rate": "50",
-      "top30_pass_rate": "50"
+      "pass_rate": "40",
+      "pass_rate_summary": "(2/5)",
+      "top10_pass_rate": "40",
+      "top20_pass_rate": "40",
+      "top30_pass_rate": "40"
     }
   ],
   "test_suite_list_hb": [
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2020-06-08 15:03:44",
+      "update_time": "2020-06-08 15:05:48",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -48,7 +48,7 @@
       "host_name": "ATHQA036B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-08 15:03:56",
+      "update_time": "2020-06-08 15:06:03",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-08 15:03:52",
+      "update_time": "2020-06-08 15:05:56",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -73,16 +73,16 @@
     {
       "host_name": "ATHQA037B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-06-08 15:02:06",
+      "status": "IDLE",
+      "update_time": "2020-06-08 15:05:51",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-324365",
-      "fail_count": 264,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 265,
       "capability": [
         "5"
       ]
     }
   ],
-  "estimate_time": 36
+  "estimate_time": 0
 }
