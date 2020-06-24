@@ -4,8 +4,8 @@
   "category": "AN",
   "sub_category": "Sony",
   "pm": "jerry.fan",
-  "max_queue_time": 0,
-  "max_queue_pb_id": "",
+  "max_queue_time": 3,
+  "max_queue_pb_id": "PB-331535",
   "max_queue_over_2_hours": 0,
   "test_suite_list": [
     {
@@ -16,7 +16,7 @@
       "tree_day_avg": "1",
       "last_week_avg": "2",
       "pass_rate": "0",
-      "pass_rate_summary": "(0/15)",
+      "pass_rate_summary": "(0/16)",
       "top10_pass_rate": "0",
       "top20_pass_rate": "0",
       "top30_pass_rate": "0"
@@ -34,7 +34,7 @@
       "host_name": "ATHQA034C",
       "device": "3",
       "status": "IDLE",
-      "update_time": "2020-06-24 10:23:15",
+      "update_time": "2020-06-24 10:25:18",
       "job_type": "HB",
       "test_suite_id": "",
       "main_clno": "",
@@ -47,12 +47,12 @@
     {
       "host_name": "ATHQA036B",
       "device": "4",
-      "status": "BUSY",
-      "update_time": "2020-06-24 10:22:33",
+      "status": "IDLE",
+      "update_time": "2020-06-24 10:25:05",
       "job_type": "PB",
-      "test_suite_id": "5",
-      "main_clno": "PB-331535",
-      "fail_count": 40,
+      "test_suite_id": "",
+      "main_clno": "",
+      "fail_count": 41,
       "capability": [
         "5"
       ]
@@ -61,7 +61,7 @@
       "host_name": "ATHQA037A",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-24 10:23:08",
+      "update_time": "2020-06-24 10:25:13",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
@@ -74,7 +74,7 @@
       "host_name": "ATHQA037B",
       "device": "4",
       "status": "IDLE",
-      "update_time": "2020-06-24 10:23:19",
+      "update_time": "2020-06-24 10:25:26",
       "job_type": "PB",
       "test_suite_id": "",
       "main_clno": "",
