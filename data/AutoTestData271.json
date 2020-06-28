@@ -19,11 +19,11 @@
     {
       "host_name": "ATHQA036D",
       "device": "4",
-      "status": "IDLE",
-      "update_time": "2020-06-29 04:20:57",
+      "status": "BUSY",
+      "update_time": "2020-06-29 04:22:07",
       "job_type": "HB",
-      "test_suite_id": "",
-      "main_clno": "",
+      "test_suite_id": "5",
+      "main_clno": "20200629012959",
       "fail_count": 139,
       "capability": [
         "5"
